@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "ファイルダウンロード";
+    ViewBag.Page = "A2";
+}
+<link href="/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!-- container -->
+<div class="container">
+    <div class="page-heading gpp_page-heading">
+        <ul class="breadcrumb">
+            <li>
+                @Html.ActionLink("ホーム", "GoBackD365", "Home", new { uid = @ViewBag.uid, actionHeader = "Home" })
+            </li>
+            <li>
+                @Html.ActionLink("ファイル一覧 ", "GoBackD365", "Home", new { uid = @ViewBag.uid, actionHeader = "FileList" })
+            </li>
+            <li>
+                @Html.ActionLink("ファイル領域詳細", "GoBackD365", "Home", new { uid = @ViewBag.uid, actionHeader = "FileAreaDetails" })
+            </li>
+            <li class="active">@ViewBag.Title</li>
+        </ul>
+        <div class="gpp_mt-32 page-header">
+            <h1 class="hd2-type01">@ViewBag.Title</h1>
+        </div>
+    </div>
+    <!-- ファイル情報表示エリア-->
+    <div class="gpp20-section">
+        <div class="view-grid">
+            <table class="table table-striped table-fluid gpp_list-table">
+                <thead>
+                    <tr>
+                        <th class="gpp_w40p">ファイル名</th>
+                        <th class="gpp_w20p">ファイルトークン</th>
+                        <th class="gpp_w20p">ファイルサイズ</th>
+                        <th class="gpp_w20p">アップロード日時</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="gpp_w40p">@Model.FileName</td>
+                        <td class="gpp_w20p">@Model.SanitizedToken</td>
+                        <td class="gpp_w20p">@((Model.FileSize /1024).ToString("0.00"))KB</td>
+                        <td class="gpp_w20p">@Convert.ToDateTime(Model.UploadedDate).ToString("yyyy/MM/dd HH:mm:ss")</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 説明エリア-->
+    <div class="gpp20-section">
+        <div class="gpp20-description">
+            <p>上記ファイルをダウンロードします。よろしければダウンロードボタンをクリックしてください</p>
+        </div>
+    </div>
+    <br />
+    <div class="gpp20-section gpp_mb-40">
+        <div class="gpp_buttongroup center">
+
+            @if (@ViewBag.usertype == 2)
+            {
+                <a class="btnDownload gpp_button gpp_btn-secondry icon-download" href="@Model.BlobUrl">ダウンロード</a>}
+            else
+            {
+                <form asp-controller="Download" asp-action="Download" method="get" id="download">
+                    <input name="uid" value=@ViewBag.uid type="hidden">
+                    <input name="at" value=@ViewBag.at type="hidden">
+                    <input name="fiid" value=@ViewBag.fiid type="hidden">
+                    <button class="btnDownload gpp_button gpp_btn-secondry icon-download" type="submit">ダウンロード</button>
+                </form>
+            }
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery-3.5.1.min.js"></script>
+<script src="~/lib/jquery/dist/jquery-ui.js"></script>
+<script src="~/lib/jquery/dist/script.js"></script>
+<script src="~/js//download.js"></script>

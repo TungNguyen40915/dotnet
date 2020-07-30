@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Dotnet Exercise</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous"></script>
+
+    <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+    <script src="~/lib/jquery/dist/jquery.ui.widget.js"></script>
+
+    <!-- The Templates plugin is included to render the upload/download listings -->
+    <script src="https://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
+    <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+    <script src="https://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+    <!-- The Canvas to Blob plugin is included for image resizing functionality -->
+    <script src="https://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+    <!-- blueimp Gallery script -->
+    <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/dist/jquery.iframe-transport.js"></script>
+    <script src="~/lib/jquery/dist/jquery.fileupload.js"></script>
+    <script src="~/lib/jquery/dist/jquery.fileupload-process.js"></script>
+    <script src="~/lib/jquery/dist/jquery.fileupload-image.js"></script>
+    <script src="~/lib/jquery/dist/jquery.fileupload-audio.js"></script>
+    <script src="~/lib/jquery/dist/jquery.fileupload-video.js"></script>
+    <script src="~/lib/jquery/dist/jquery.fileupload-validate.js"></script>
+    <script src="~/lib/jquery/dist/jquery.fileupload-ui.js"></script>
+    <script src="~/lib/jquery/dist/demo.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-static-top gpp_headernav" role="navigation">
+        <div class="container">
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="gpp_footer-line"></div>
+        <div class="gpp_footer-container">
+        </div>
+    </footer>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

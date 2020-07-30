@@ -1,0 +1,181 @@
+﻿@{
+    ViewBag.Title = "Upload";
+    ViewBag.Page = "A1";
+}
+
+
+<script type="text/javascript">
+        var validExtension = @Json.Serialize(@ViewBag.validExtension);
+        var maxFileSize = @ViewBag.maxFileSize;
+        var maxFileCount = @ViewBag.maxFileCount;
+        var maxLengthFileName = @ViewBag.maxLengthFileName;
+
+</script>
+
+
+
+<div class="file-upload-rule">
+    <div style="text-align: center">Please choose file obeying these following rules:</div>
+    <br />
+    <ul>
+        <li>
+            Allowed extension：
+            <br />
+            @{int i = 1;}
+            @foreach (var item in @ViewBag.validExtension)
+            {
+                @if (i == @ViewBag.validExtension.Count)
+                {
+                    <span>@item</span>
+
+                }
+                else
+                {
+                    <span>@item,</span>
+                }
+
+                i++;
+
+            }
+        </li>
+        <li>
+            Max Size (per file): <span>@ViewBag.maxFileSize</span> MB
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="gpp20-filedrop gpp_mb-40" id="dropzone"><span>Drag and Drop File(s) here</span></div>
+
+
+<form id="fileupload" asp-controller="Upload" asp-action="onUpload" method="POST" enctype="multipart/form-data">
+    <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/" /></noscript>
+    <div class="gpp20-fileUpload-area">
+        <div class="addfilebtn-area">
+            <div class="row fileupload-buttonbar">
+                <div class="">
+                    <label for="file_upload" class="gpp20-fileselct">
+                        Choose File
+                        <input id="file_upload" style="display:none;" type="file" name="files" multiple />
+                    </label>
+                    <span class="fileupload-process"></span>
+                </div>
+                <div class="col-lg-5 fileupload-progress fade">
+                    <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-success" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-extended">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listtable-area">
+            <table role="presentation" class="gpp20-uploadFileList">
+                <tbody class="files"></tbody>
+                <tbody class="btnArea">
+                    <tr>
+                        <td class="">
+                            <div class="gpp20-fileUpload-btn">
+                                <button class="gpp_button gpp_btn-primary icon-upload" id="uploadbutton" onclick="submitForm()" type="button">Upload</button>
+                            </div>
+                        </td>
+                        <td class="gpp_w20p"></td>
+                        <td class="gpp_w10p"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>
+
+
+<div id="form-modal-progress" class="gpp20modalWindow modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="status-area">
+        <span class="loaderB" area-hidden="true"></span>
+        <span class="status-msg">Uploading...</span>
+    </div>
+    <div class="filelist">
+
+    </div>
+    <div class="modal-inr-btn gpp_mt-16 gpp_mb-16">
+        <button id="close010" class="gpp_button gpp_btn-negative-outline icon-icon_cancel disabled">Close</button>
+    </div>
+</div>
+
+<div tabindex="-1" role="dialog" id="form-modal-success" data-backdrop="static" data-keyboard="false" class="gpp20modalWindow modal">
+    <div class="status-area">
+        <span class="success" area-hidden="true"></span>
+        <span class="status-msg">Upload Finsihed Successfully</span>
+    </div>
+    <div class="filelist">
+
+    </div>
+    <div class="modal-inr-btn gpp_mt-16">
+        <button id="close02" class="gpp_button gpp_btn-negative-outline icon-icon_cancel" onclick="location.reload(true);">Close</button>
+    </div>
+</div>
+
+<div class="gpp20modalWindow modal" tabindex="-1" role="dialog" id="form-modal-error">
+    <div class="status-area">
+        <span class="error" area-hidden="true"></span>
+        <span class="status-msg">Something Went Wrong</span>
+    </div>
+    <div class="filelist" style="text-align: center">
+
+    </div>
+    <div class="modal-inr-btn gpp_mt-16">
+        <button id="close03" class="gpp_button gpp_btn-negative-outline icon-icon_cancel" onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+
+<script id="template-upload" type="text/x-tmpl">
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload">
+        <td class="attachFileName">
+            <p class="upload-filename  name" data-filename="{%=file.name%}">{%=file.name%}</p>
+            <strong class="error text-danger"></strong>
+            <span class="fileCountOver">Please upload 10 files in maximum each time</span>
+        </td>
+        <td class="attachFileSize gpp_w20p">
+            <p class="size">Processing...</p>
+        </td>
+        <td class="attachFileCancel gpp_w10p">
+            {% if (!i) { %}
+            <button class="gpp20-fileSelectCancel cancel">
+                <i class="icon-icon_cancel"></i>
+                <span></span>
+            </button>
+            {% } %}
+        </td>
+    </tr>
+    {% } %}
+</script>
+
+<script id="template-download" type="text/x-tmpl">
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+
+    <tr class="template-upload">
+        <td class="attachFileName">
+            <p class="name" data-filename="{%=file.name%}">{%=file.name%}</p>
+            <strong class="error text-danger"></strong>
+            <span class="fileCountOver">Please upload 10 files in maximum each time</span>
+
+        </td>
+        <td class="attachFileSize gpp_w20p">
+            <p class="size">Processing...</p>
+        </td>
+        <td class="attachFileCancel gpp_w10p">
+            {% if (!i) { %}
+            <button class="gpp20-fileSelectCancel cancel">
+                <i class="icon-icon_cancel"></i>
+                <span></span>
+            </button>
+            {% } %}
+        </td>
+    </tr>
+    {% } %}
+</script>
+
+<script src="~/js/upload.js"></script>

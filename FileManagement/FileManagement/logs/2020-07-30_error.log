@@ -1,0 +1,19 @@
+﻿2020-07-30 10:33:58,597  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 10:33:58,647  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 10:33:58,655  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: C:\Users\nbtung\Desktop\sbt-feature-prove_dev_GPP_Sprint1\FileManagement\FileManagement
+ 2020-07-30 10:34:51,649 ERROR sharedfile.Commons.Common - MESSAGE: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Newtonsoft.Json.Linq.JContainer.GetItem(Int32 index)
+   at Newtonsoft.Json.Linq.JArray.get_Item(Int32 index)
+   at sharedfile.Commons.DynTokenCheck.CheckToken(IConfiguration _config, Guid uid, Guid at) in C:\Users\nbtung\Desktop\sbt-feature-prove_dev_GPP_Sprint1\FileManagement\FileManagement\Commons\Common.cs:line 147
+   at sharedfile.Commons.Common.AuthorizeUser(IConfiguration _config, String userId, String accessToken) in C:\Users\nbtung\Desktop\sbt-feature-prove_dev_GPP_Sprint1\FileManagement\FileManagement\Commons\Common.cs:line 35
+ 2020-07-30 15:46:18,988  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 15:46:19,046  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 15:46:19,058  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: C:\Users\nbtung\Desktop\sbt-feature-prove_dev_GPP_Sprint1\FileManagement\FileManagement
+ 2020-07-30 17:06:17,895  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 17:06:17,959  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 17:06:17,969  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: C:\Users\nbtung\Desktop\sbt-feature-prove_dev_GPP_Sprint1\FileManagement\FileManagement
+ 2020-07-30 17:36:39,137  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 17:36:39,197  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 17:36:39,209  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: C:\Users\nbtung\Desktop\sbt-feature-prove_dev_GPP_Sprint1\FileManagement\FileManagement
+ 

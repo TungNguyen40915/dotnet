@@ -1,0 +1,3156 @@
+﻿@charset "UTF-8";
+/* ==========================================================================
+  init
+  ========================================================================== */
+/*!
+ * Bootstrap Reboot v5.0.0-alpha1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", YuGothic, "ＭＳ ゴシック", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+    outline: 0 !important;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+}
+
+    hr:not([size]) {
+        height: 1px;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+h2 {
+    font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+h4 {
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+abbr[title],
+abbr[data-original-title] {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    cursor: help;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+}
+
+address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+}
+
+ol,
+ul {
+    padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+    ol ol,
+    ul ul,
+    ol ul,
+    ul ol {
+        margin-bottom: 0;
+    }
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: .5rem;
+    margin-left: 0;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+small {
+    font-size: 0.875em;
+}
+
+mark {
+    padding: 0.2em;
+    background-color: #fcf8e3;
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: 0.75em;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+sup {
+    top: -.5em;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+    a:hover {
+        color: #024dbc;
+    }
+
+    a:not([href]), a:not([href]):hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
+pre,
+code,
+kbd,
+samp {
+    font-family: var(--bs-font-monospace);
+    font-size: 1em;
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: auto;
+    font-size: 0.875em;
+    -ms-overflow-style: scrollbar;
+}
+
+    pre code {
+        font-size: inherit;
+        color: inherit;
+        word-break: normal;
+    }
+
+code {
+    font-size: 0.875em;
+    color: #d63384;
+    word-wrap: break-word;
+}
+
+a > code {
+    color: inherit;
+}
+
+kbd {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.875em;
+    color: #fff;
+    background-color: #212529;
+    border-radius: 0.2rem;
+}
+
+    kbd kbd {
+        padding: 0;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+figure {
+    margin: 0 0 1rem;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+caption {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #6c757d;
+    text-align: left;
+}
+
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+label {
+    display: inline-block;
+}
+
+button {
+    border-radius: 0;
+}
+
+    button:focus {
+        outline: none;
+    }
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+select {
+    word-wrap: normal;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+    button:not(:disabled),
+    [type="button"]:not(:disabled),
+    [type="reset"]:not(:disabled),
+    [type="submit"]:not(:disabled) {
+        cursor: pointer;
+    }
+
+::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+legend {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: calc(1.275rem + 0.3vw);
+    line-height: inherit;
+    white-space: normal;
+}
+
+@media (min-width: 1200px) {
+    legend {
+        font-size: 1.5rem;
+    }
+}
+
+legend + * {
+    clear: left;
+}
+
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+    padding: 0;
+}
+
+::-webkit-inner-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button;
+}
+
+output {
+    display: inline-block;
+}
+
+iframe {
+    border: 0;
+}
+
+summary {
+    display: list-item;
+    cursor: pointer;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+input[type="checkbox"]:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+/* ==========================================================================
+  Component
+  ========================================================================== */
+/* header */
+.gpp_headernav {
+    width: auto;
+    height: 80px;
+    background: #ffffff !important;
+    position: relative;
+}
+
+    .gpp_headernav::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        min-width: 1170px;
+        background: linear-gradient(90deg, #b9ceef, #edb4d0);
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        z-index: -2;
+    }
+
+    .gpp_headernav .container {
+        height: 80px;
+    }
+
+        .gpp_headernav .container .navbar-header {
+            width: 240px;
+            height: auto;
+            background: transparent;
+            float: left;
+        }
+
+            .gpp_headernav .container .navbar-header .navbar-brand {
+                margin: 0 !important;
+                padding: 18px 0 0 0;
+                height: auto;
+                width: auto;
+            }
+
+                .gpp_headernav .container .navbar-header .navbar-brand .gpp_headerTtl {
+                    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", YuGothic, "ＭＳ ゴシック", sans-serif;
+                    text-align: center;
+                    font-size: 36px;
+                    font-weight: bold;
+                    line-height: 3.2rem;
+                }
+
+.gpp_navbar-right {
+    height: 80px;
+}
+
+    .gpp_navbar-right ul {
+        height: 80px;
+    }
+
+        .gpp_navbar-right ul li {
+            height: 80px;
+        }
+
+            .gpp_navbar-right ul li a {
+                height: 80px;
+                color: #333333;
+            }
+
+                .gpp_navbar-right ul li a:hover {
+                    color: #ffffff;
+                    background: #008905;
+                }
+
+            .gpp_navbar-right ul li a {
+                height: 80px;
+                color: #333333;
+            }
+
+.navbar-static-top.navbar .menu-bar > .navbar-nav > li > a {
+    color: #333333;
+    min-width: 120px;
+    text-align: center;
+    line-height: 4.6rem;
+    margin-left: 0 !important;
+    text-decoration: none;
+}
+
+    .navbar-static-top.navbar .menu-bar > .navbar-nav > li > a:hover {
+        color: #fff;
+    }
+
+.navbar-nav > li {
+    float: left;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+
+.nav:before, .nav:after {
+    content: " ";
+    display: table;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+    .nav > li > a {
+        position: relative;
+        display: block;
+    }
+
+.navbar-static-top.navbar .menu-bar > .navbar-nav > li > a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#navbar ul.navbar-nav li .icon-ico_search:before {
+    color: #333333;
+}
+
+footer {
+    position: relative;
+    color: #AAAAAA;
+    min-width: 1170px;
+    width: 100%;
+    background: #fff !important;
+}
+
+    footer .gpp_footer-line {
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(90deg, #b9ceef, #edb4d0);
+    }
+
+    footer .gpp_footer-container {
+        width: 1040px;
+        height: 120px;
+        margin: 0 auto;
+        padding: 16px 0;
+    }
+
+        footer .gpp_footer-container .footer-helper {
+            font-size: 15px;
+            text-align: right;
+            line-height: 2rem;
+        }
+
+            footer .gpp_footer-container .footer-helper a {
+                text-decoration: underline;
+                color: #2965cc;
+            }
+
+                footer .gpp_footer-container .footer-helper a:hover {
+                    text-decoration: none;
+                    color: #6993db;
+                }
+
+        footer .gpp_footer-container .footer-copyright {
+            text-align: right;
+            color: #333333;
+        }
+
+.container {
+    max-width: none !important;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.gpp20-section {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.gpp_buttongroup {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 28px;
+}
+
+    .gpp_buttongroup.center {
+        justify-content: center;
+    }
+
+.result-filename a {
+    position: relative;
+}
+
+    .result-filename a::before {
+        font-family: "icomoon" !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        color: #008905;
+        margin-right: 8px;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .result-filename a[value$=".xls"]::before,
+    .result-filename a[value$=".xlsx"]::before,
+    .result-filename a[value$=".xlsm"]::before {
+        content: "\e912";
+    }
+
+    .result-filename a[value$=".txt"]::before {
+        content: "\e910";
+    }
+
+    .result-filename a[value$=".wmf"]::before {
+        content: "\e911";
+    }
+
+    .result-filename a[value$=".tif"]::before {
+        content: "\e90e";
+    }
+
+    .result-filename a[value$=".tiff"]::before {
+        content: "\e90f";
+    }
+    .result-filename a[value$=".ppt"]::before,
+    .result-filename a[value$=".pptx"]::before,
+    .result-filename a[value$=".pptm"]::before {
+        content: "\e90c";
+    }
+
+    .result-filename a[value$=".rtf"]::before {
+        content: "\e90d";
+    }
+
+    .result-filename a[value$=".pdf"]::before {
+        content: "\e90a";
+    }
+
+    .result-filename a[value$=".png"]::before {
+        content: "\e90b";
+    }
+
+    .result-filename a[value$=".jpg"]::before {
+        content: "\e908";
+    }
+
+    .result-filename a[value$=".eml"]::before {
+        content: "\e909";
+    }
+
+    .result-filename a[value$=".gif"]::before {
+        content: "\e906";
+    }
+
+    .result-filename a[value$=".jpeg"]::before {
+        content: "\e907";
+    }
+
+    .result-filename a[value$=".dxf"]::before {
+        content: "\e904";
+    }
+
+    .result-filename a[value$=".emf"]::before {
+        content: "\e905";
+    }
+
+    .result-filename a[value$=".doc"]::before,
+    .result-filename a[value$=".docx"]::before,
+    .result-filename a[value$=".docm"]::before {
+        content: "\e902";
+    }
+
+    .result-filename a[value$=".dwg"]::before {
+        content: "\e903";
+    }
+
+    .result-filename a[value$=".bmp"]::before {
+        content: "\e900";
+    }
+
+    .result-filename a[value$=".csv"]::before {
+        content: "\e901";
+    }
+
+.gpp20-description {
+    padding: 32px;
+}
+
+    .gpp20-description p {
+        text-align: center;
+    }
+
+/* filedrop */
+.gpp20-filedrop {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    border-radius: 12px;
+    border: 4px dashed #999;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .gpp20-filedrop span {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        color: #666;
+    }
+
+.gpp20-filedrop-discription {
+    padding: 24px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* fileattach */
+.gpp20-file-select {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.attachFileListArea {
+    width: 80%;
+}
+
+.attachFileList {
+    width: 100%;
+}
+
+.fileProperty {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #666;
+}
+
+    .fileProperty .fileName {
+        width: 70%;
+        flex-grow: 3;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .fileProperty .fileSize {
+        width: 80px;
+    }
+
+    .fileProperty .fileRemove {
+        width: 32px;
+        height: 32px;
+    }
+
+.navbar.gpp_headernav　 {
+    margin-bottom: 0 !important;
+}
+
+.gpp20-fileUpload-area {
+    display: flex;
+    padding: 8px 20px;
+}
+
+    .gpp20-fileUpload-area .addfilebtn-area {
+        width: 25%;
+    }
+
+    .gpp20-fileUpload-area .listtable-area {
+        width: 75%;
+    }
+
+.gpp20-fileUpload-btn {
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+}
+
+.gpp20-uploadFileList {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+    .gpp20-uploadFileList tbody > tr > td {
+        padding: 16px;
+        line-height: 1.5;
+        vertical-align: middle;
+        border-bottom: 1px dashed #ddd;
+        font-size: 16px;
+    }
+
+        .gpp20-uploadFileList tbody > tr > td.attachFileName {
+            width: 75%;
+        }
+
+            .gpp20-uploadFileList tbody > tr > td.attachFileName p.name {
+                position: relative;
+                padding-left: 24px;
+                margin-bottom: 0;
+            }
+
+            .gpp20-uploadFileList tbody > tr > td.attachFileName .fileCountOver {
+                display: none;
+            }
+
+        .gpp20-uploadFileList tbody > tr > td.attachFileSize {
+            width: 16%;
+        }
+
+            .gpp20-uploadFileList tbody > tr > td.attachFileSize p.size {
+                margin-bottom: 0;
+            }
+
+    .gpp20-uploadFileList tbody tr:nth-of-type(n + 11) {
+        background-color: #fefadd;
+        color: #999;
+    }
+
+        .gpp20-uploadFileList tbody tr:nth-of-type(n + 11) .attachFileName p.name:before {
+            color: #999;
+        }
+
+        .gpp20-uploadFileList tbody tr:nth-of-type(n + 11) .fileCountOver {
+            display: block !important;
+            margin: 4px 0 0 20px;
+            font-weight: bold;
+            color: #9e5900;
+        }
+
+    .gpp20-uploadFileList .gpp20-fileSelectCancel {
+        display: inline-block;
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: none;
+        color: #fff;
+        background: transparent;
+    }
+
+        .gpp20-uploadFileList .gpp20-fileSelectCancel .icon-icon_cancel {
+            font-size: 24px;
+        }
+
+            .gpp20-uploadFileList .gpp20-fileSelectCancel .icon-icon_cancel:before {
+                color: #2965cc;
+            }
+
+    .gpp20-uploadFileList tbody.btnArea > tr > td {
+        border-bottom: none !important;
+    }
+
+.listtable-area
+.gpp20-uploadFileList
+.files:empty + tbody
+.gpp20-fileUpload-btn
+button {
+    color: #cecacb;
+    background-color: #ada7a9;
+    border-color: #ada7a9;
+    pointer-events: none;
+    opacity: 1;
+}
+
+    .listtable-area
+    .gpp20-uploadFileList
+    .files:empty + tbody
+    .gpp20-fileUpload-btn
+    button::before {
+        color: #cecacb;
+    }
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1;
+}
+
+.gpp20modalWindow {
+    width: 800px;
+    min-height: 350px;
+    max-height: 550px;
+    overflow-y: auto;
+    position: fixed;
+    bottom: unset !important;
+    border: none;
+    background-color: #fff;
+    display: none;
+    z-index: 2;
+}
+
+    .gpp20modalWindow .status-area {
+        width: 100%;
+        margin-top: 16px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .gpp20modalWindow .status-area .success {
+            display: block;
+            width: 86px;
+            height: 72px;
+            background-color: #fff;
+            background: url('../image/done.svg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .gpp20modalWindow .status-area .error {
+            display: block;
+            width: 72px;
+            height: 72px;
+            background-color: #fff;
+            background: url("../image/error.svg") no-repeat center center;
+            background-size: contain;
+        }
+
+        .gpp20modalWindow .status-area .status-msg {
+            display: block;
+            margin: 16px;
+            font-size: 16px;
+            color: #666;
+        }
+
+    .gpp20modalWindow .filelist {
+        width: 80%;
+        margin: 0 auto;
+        max-height: 222px;
+        overflow-y: auto;
+    }
+
+        .gpp20modalWindow .filelist ul {
+            list-style-type: none;
+        }
+
+            .gpp20modalWindow .filelist ul li {
+                padding: 8px;
+                border-bottom: 1px dashed #ada7a9;
+            }
+
+    .gpp20modalWindow .modal-inr-btn {
+        text-align: center;
+    }
+
+.loaderB {
+    display: inline;
+    width: 72px;
+    height: 72px;
+    background:  url('../image/uploading.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load8 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+label.gpp20-fileselct > input {
+    /* 透明度0 */
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    /* ブラウザのデフォルトのスタイルを削除 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* レイアウトから無視 */
+    position: absolute;
+}
+
+    label.gpp20-fileselct > input:focus {
+        border: 1px solid #000;
+    }
+
+label.gpp20-fileselct {
+    height: 44px;
+    width: 240px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    padding: 11px 14px 14px 14px;
+    font-size: 16px;
+    line-height: 1.42857;
+    text-decoration: none;
+    border-radius: 22px;
+    position: relative;
+    color: #2965cc;
+    background-color: #fbfcff;
+    border-color: #2965cc;
+}
+
+    label.gpp20-fileselct::before {
+        font-size: 18px;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+        font-family: "icomoon" !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e918";
+    }
+
+    label.gpp20-fileselct:focus {
+        border: 1px solid #000;
+    }
+
+button.gpp_button:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.gpp20-uploadFileList p[data-filename$=".doc"]:before,
+.gpp20-uploadFileList p[data-filename$=".docx"]:before,
+.gpp20-uploadFileList p[data-filename$=".docm"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e902";
+}
+
+.gpp20-uploadFileList p[data-filename$=".ppt"]:before,
+.gpp20-uploadFileList p[data-filename$=".pptx"]:before,
+.gpp20-uploadFileList p[data-filename$=".pptm"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e90c";
+}
+
+.gpp20-uploadFileList p[data-filename$=".xls"]:before,
+.gpp20-uploadFileList p[data-filename$=".xlsx"]:before,
+.gpp20-uploadFileList p[data-filename$=".xlsm"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e912";
+}
+
+.gpp20-uploadFileList p[data-filename$=".txt"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e910";
+}
+
+.gpp20-uploadFileList p[data-filename$=".rtf"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e90d";
+}
+
+.gpp20-uploadFileList p[data-filename$=".csv"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e901";
+}
+
+.gpp20-uploadFileList p[data-filename$=".bmp"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e900";
+}
+
+.gpp20-uploadFileList p[data-filename$=".gif"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e906";
+}
+
+.gpp20-uploadFileList p[data-filename$=".wmf"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e911";
+}
+
+.gpp20-uploadFileList p[data-filename$=".emf"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e905";
+}
+
+.gpp20-uploadFileList p[data-filename$=".png"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e90b";
+}
+
+.gpp20-uploadFileList p[data-filename$=".jpg"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e908";
+}
+
+.gpp20-uploadFileList p[data-filename$=".jpeg"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e907";
+}
+
+.gpp20-uploadFileList p[data-filename$=".tif"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e90e";
+}
+
+.gpp20-uploadFileList p[data-filename$=".tiff"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e90f";
+}
+
+.gpp20-uploadFileList p[data-filename$=".dwg"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e903";
+}
+
+.gpp20-uploadFileList p[data-filename$=".dxf"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e904";
+}
+
+.gpp20-uploadFileList p[data-filename$=".eml"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e909";
+}
+
+.gpp20-uploadFileList p[data-filename$=".pdf"]:before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #0c8c00;
+    font-size: 34px;
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    content: "\e90a";
+}
+
+.gpp20-inputgroup .chkbox-group {
+    display: flex;
+}
+
+    .gpp20-inputgroup .chkbox-group .checkbox {
+        position: relative;
+        display: block;
+        margin-top: 10px;
+        margin-right: 24px;
+        margin-bottom: 10px;
+    }
+
+        .gpp20-inputgroup .chkbox-group .checkbox label {
+            display: inline-block;
+            max-width: 100%;
+            min-height: 21px;
+            padding-left: 36px;
+            margin-bottom: 0;
+            font-weight: normal;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        .gpp20-inputgroup .chkbox-group .checkbox input[type="checkbox"] {
+            transform: scale(1.8);
+            position: absolute;
+            top: 4px;
+            left: 10px;
+            font-weight: 400;
+            cursor: pointer;
+            margin-left: 1px !important;
+        }
+
+            .gpp20-inputgroup .chkbox-group .checkbox input[type="checkbox"]:focus {
+                outline: thin dotted;
+                outline: 5px auto -webkit-focus-ring-color;
+                outline-offset: -2px;
+            }
+
+.gpp20-logview-utility {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .gpp20-logview-utility .records p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .gpp20-logview-utility .btn-group {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .gpp20-logview-utility .btn-group a {
+            margin-left: 16px;
+        }
+
+.gpp20-overflowtable {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.gpp20_log-table {
+    border: 2px solid #e6e6e6;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: auto;
+}
+
+    .gpp20_log-table thead tr {
+        border: 2px solid transparent;
+        background: #008905;
+        color: #fff;
+        font-weight: normal;
+        padding: 8px 16px;
+    }
+
+        .gpp20_log-table thead tr th {
+            padding: 14px 12px 14px 18px;
+            line-height: 1.42857;
+            border-top: 1px solid #ddd;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
+            .gpp20_log-table thead tr th a {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+    .gpp20_log-table tbody tr:nth-of-type(odd) {
+        background-color: #fbfbfb;
+    }
+
+    .gpp20_log-table tbody tr:nth-of-type(even) {
+        background-color: #fff;
+    }
+
+    .gpp20_log-table tbody tr td {
+        min-height: 32px;
+        padding: 18px 12px 18px 18px;
+        line-height: 2.8rem;
+        border-top: 1px solid #ddd;
+        word-break: break-all;
+    }
+
+        .gpp20_log-table tbody tr td a {
+            color: #333333;
+            text-decoration: underline;
+        }
+
+            .gpp20_log-table tbody tr td a:hover {
+                color: #6993db;
+                text-decoration: none;
+            }
+
+.gpp20-searchresult-utility {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .gpp20-searchresult-utility .records p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .gpp20-searchresult-utility .btn-group {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .gpp20-searchresult-utility .btn-group a {
+            margin-left: 16px;
+        }
+
+.gpp20_searchresult-table {
+    border: 2px solid #e6e6e6;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .gpp20_searchresult-table thead tr {
+        border: 2px solid transparent;
+        background: #008905;
+        color: #fff;
+        font-weight: normal;
+    }
+
+        .gpp20_searchresult-table thead tr th {
+            padding: 8px 8px 8px 24px;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
+    .gpp20_searchresult-table tbody tr:nth-of-type(odd) {
+        background-color: #fbfbfb;
+    }
+
+    .gpp20_searchresult-table tbody tr:nth-of-type(even) {
+        background-color: #fff;
+    }
+
+    .gpp20_searchresult-table tbody tr td {
+        min-height: 32px;
+        padding: 8px 24px;
+        line-height: 2.8rem;
+        white-space: nowrap;
+        border-top: 1px solid #ddd;
+    }
+
+        .gpp20_searchresult-table tbody tr td.result-filesize {
+            text-align: center;
+        }
+
+        .gpp20_searchresult-table tbody tr td.result-day {
+            text-align: left;
+        }
+
+        .gpp20_searchresult-table tbody tr td .result-filename {
+            font-weight: 500;
+            line-height: 1.1;
+            color: #232222;
+            margin: 4px 0 4px 0;
+            padding: 0 0 6px 0;
+            font-size: 24px;
+            white-space: normal;
+            word-break: break-all;
+        }
+
+        .gpp20_searchresult-table tbody tr td .result-filelink {
+            color: #333333;
+            text-decoration: none;
+        }
+
+            .gpp20_searchresult-table tbody tr td .result-filelink:hover {
+                color: #6993db;
+                text-decoration: none;
+            }
+
+        .gpp20_searchresult-table tbody tr td .result-filepass {
+            font-size: 16px;
+            margin: 0;
+            line-height: 1.2;
+            white-space: normal;
+        }
+
+.gpp_btn-primary[class^="icon-"], .gpp_btn-primary[class*=" icon-"],
+.gpp_btn-secondry[class^="icon-"],
+.gpp_btn-secondry[class*=" icon-"],
+.gpp_btn-green[class^="icon-"],
+.gpp_btn-green[class*=" icon-"],
+.gpp_btn-negative[class^="icon-"],
+.gpp_btn-negative[class*=" icon-"] {
+    padding-left: 38px;
+}
+
+    .gpp_btn-primary[class^="icon-"]::before, .gpp_btn-primary[class*=" icon-"]::before,
+    .gpp_btn-secondry[class^="icon-"]::before,
+    .gpp_btn-secondry[class*=" icon-"]::before,
+    .gpp_btn-green[class^="icon-"]::before,
+    .gpp_btn-green[class*=" icon-"]::before,
+    .gpp_btn-negative[class^="icon-"]::before,
+    .gpp_btn-negative[class*=" icon-"]::before {
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+    }
+
+.gpp_btn-primary-outline[class^="icon-"], .gpp_btn-primary-outline[class*=" icon-"] {
+    padding-left: 38px;
+}
+
+    .gpp_btn-primary-outline[class^="icon-"]::before, .gpp_btn-primary-outline[class*=" icon-"]::before {
+        color: #d6235a;
+        font-size: 18px;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+    }
+
+.gpp_btn-secondry-outline[class^="icon-"], .gpp_btn-secondry-outline[class*=" icon-"] {
+    padding-left: 38px;
+}
+
+    .gpp_btn-secondry-outline[class^="icon-"]::before, .gpp_btn-secondry-outline[class*=" icon-"]::before {
+        color: #2965cc;
+        font-size: 18px;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+    }
+
+.gpp_btn-negative-outline[class^="icon-"], .gpp_btn-negative-outline[class*=" icon-"] {
+    padding-left: 38px;
+}
+
+    .gpp_btn-negative-outline[class^="icon-"]::before, .gpp_btn-negative-outline[class*=" icon-"]::before {
+        color: #787878;
+        font-size: 18px;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+    }
+
+input.gpp20-search-form {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #999999;
+    border-radius: 22px;
+    color: #333333;
+    display: block;
+    font-size: 16px;
+    padding: 8px 16px;
+    width: 100%;
+    height: 44px;
+}
+
+    input.gpp20-search-form:focus {
+        border: 2px solid #0c8c00;
+        box-shadow: none;
+    }
+
+.btn_center {
+    display: block !important;
+    margin: 16px auto;
+}
+
+.gpp20-inputgroup {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+}
+
+    .gpp20-inputgroup .input-label {
+        width: 33%;
+    }
+
+.gpp20-datepicker input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #999999;
+    border-radius: 22px;
+    color: #333333;
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 16px;
+    width: 200px;
+    height: 44px;
+}
+
+    .gpp20-datepicker input:focus {
+        border: 2px solid #0c8c00;
+        box-shadow: none;
+    }
+
+/* pagenation bootstrap override*/
+.gpp20-pagination {
+    text-align: center;
+}
+
+    .gpp20-pagination .pagination {
+        display: inline-block;
+        margin: 32px auto;
+    }
+
+        .gpp20-pagination .pagination > li {
+            display: inline;
+        }
+
+            .gpp20-pagination .pagination > li:first-child > a,
+            .pagination > li:first-child > span {
+                width: 50px;
+                height: 48px;
+                border: 2px solid #eaf5e9;
+                margin-left: -2px;
+                font-size: 18px;
+                color: #008905;
+                background-color: #eaf5e9;
+                border-radius: 50% 0 0 50%;
+            }
+
+        .gpp20-pagination .pagination > .active > a,
+        .gpp20-pagination .pagination > .active > a:hover,
+        .gpp20-pagination .pagination > .active > a:focus,
+        .gpp20-pagination .pagination > .active > span,
+        .gpp20-pagination .pagination > .active > span:hover,
+        .gpp20-pagination .pagination > .active > span:focus {
+            z-index: 3;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: default;
+            color: #008905;
+            background-color: transparent !important;
+            border: 2px solid #eaf5e9;
+            border-radius: 0 !important;
+        }
+
+        .gpp20-pagination .pagination > li > a,
+        .pagination > li > span {
+            width: 50px;
+            height: 48px;
+            border: 2px solid #eaf5e9;
+            margin-left: -2px;
+            font-size: 18px;
+            color: #008905;
+            text-decoration: underline;
+        }
+
+        .gpp20-pagination .pagination > li > a,
+        .pagination > li > span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .gpp20-pagination .pagination > li:last-child > a,
+        .pagination > li:last-child > span {
+            width: 50px;
+            height: 48px;
+            border: 2px solid #eaf5e9;
+            margin-left: -2px;
+            font-size: 18px;
+            color: #008905;
+            background-color: #eaf5e9;
+            border-radius: 0 50% 50% 0;
+        }
+
+            .gpp20-pagination .pagination > li:last-child > a:hover,
+            .gpp20-pagination .pagination > li:first-child > a:hover {
+                background-color: #fff;
+            }
+
+        .gpp20-pagination .pagination > li > a:hover,
+        .pagination > li > span:hover {
+            background-color: #eaf5e9;
+            color: #008905;
+            text-decoration: none;
+        }
+
+.gpp_page-heading {
+    padding-top: 10px;
+}
+
+    .gpp_page-heading .breadcrumb {
+        padding: 0 0;
+        margin-left: 0;
+        margin-bottom: 21px;
+        list-style: none;
+        background-color: #fff;
+        border-radius: 0;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+        .gpp_page-heading .breadcrumb > li {
+            display: inline-block;
+        }
+
+            .gpp_page-heading .breadcrumb > li.active {
+                color: #333333;
+                font-weight: bold;
+            }
+
+            .gpp_page-heading .breadcrumb > li a {
+                color: #2965cc;
+            }
+
+                .gpp_page-heading .breadcrumb > li a:hover {
+                    text-decoration: none;
+                    color: #6993db;
+                }
+
+            .gpp_page-heading .breadcrumb > li + li:before {
+                content: "> ";
+                padding: 0 5px;
+                color: #666;
+            }
+
+/* headding */
+.gpp_headding_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.hd2-type01 {
+    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", YuGothic, "ＭＳ ゴシック", sans-serif;
+    width: auto;
+    height: 40px;
+    margin: 0 !important;
+    padding: 6px 6px 6px 50px;
+    background-image: url(../image/hd_type01.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.hd2-type02 {
+    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", YuGothic, "ＭＳ ゴシック", sans-serif;
+    width: auto;
+    height: 34px;
+    margin: 0 !important;
+    padding: 6px 6px 0 44px;
+    background-image: url(../image/hd_type02.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #333333;
+}
+
+    .hd2-type02 .required {
+        color: #cc0000;
+        font-size: 16px;
+    }
+
+.hd3-type01 {
+    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", YuGothic, "ＭＳ ゴシック", sans-serif;
+    width: auto;
+    height: 29px;
+    margin: 0;
+    padding: 5px 8px 0 12px;
+    border-left: 6px solid #008905;
+    position: relative;
+    font-size: 23px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.96;
+    white-space: nowrap;
+}
+
+    .hd3-type01::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 0;
+        left: -6px;
+        background-color: #085d00;
+        z-index: 1;
+    }
+
+    .hd3-type01 .required {
+        color: #cc0000;
+        font-size: 16px;
+    }
+
+.hd4-type01 {
+    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", YuGothic, "ＭＳ ゴシック", sans-serif;
+    width: auto;
+    height: 40px;
+    margin: 0 0 16px 0;
+    padding: 5px 8px 8px 12px;
+    font-size: 26px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 1.1;
+}
+
+    .hd4-type01 .required {
+        color: #cc0000;
+        font-size: 16px;
+    }
+
+/* download table */
+.gpp_list-table {
+    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", YuGothic, "ＭＳ ゴシック", sans-serif;
+    border: 2px solid #e6e6e6;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .gpp_list-table thead tr {
+        border: 2px solid transparent;
+        background: #008905;
+        color: #fff;
+        font-weight: normal;
+        padding: 8px 16px;
+    }
+
+        .gpp_list-table thead tr th {
+            padding: 8px 16px;
+            line-height: 1.42857;
+        }
+
+            .gpp_list-table thead tr th a {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+    .gpp_list-table tbody tr td {
+        min-height: 74px;
+        padding: 18px 16px;
+        line-height: 2.8rem;
+        word-break: break-all;
+    }
+
+        .gpp_list-table tbody tr td a {
+            color: #333333;
+            text-decoration: underline;
+        }
+
+            .gpp_list-table tbody tr td a:hover {
+                color: #6993db;
+                text-decoration: none;
+            }
+
+    .gpp_list-table .gpp_tablecell-pagination {
+        background: #fff;
+        text-align: center;
+    }
+
+    .gpp_list-table .btn.btn-xs.btn-default {
+        width: 32px;
+        height: 32px;
+        border: 2px solid #2f5fef;
+        border-radius: 4px;
+        position: relative;
+        margin-left: 12px;
+        margin-right: 0;
+    }
+
+        .gpp_list-table
+        .btn.btn-xs.btn-default
+        .fa.fa-chevron-circle-down.fa-fw::before {
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            font-family: "gpp_icon" !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            font-size: 20px;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\e90a";
+            color: #2965cc;
+        }
+
+/* button */
+/* button-base */
+.gpp_button {
+    height: 44px;
+    min-width: 170px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    padding: 11px 14px 14px 14px;
+    font-size: 16px;
+    line-height: 1.42857;
+    text-decoration: none;
+    border-radius: 22px;
+    position: relative;
+}
+
+    .gpp_button.isHeroarea {
+        display: block;
+        width: 280px;
+    }
+
+    /* button-color */
+    .gpp_button.gpp_btn-primary {
+        color: #fff;
+        background-color: #d6235a;
+        border-color: #d6235a;
+    }
+
+        .gpp_button.gpp_btn-primary:hover {
+            color: #fff;
+            background-color: #e67b9c;
+            border-color: #e67b9c;
+            text-decoration: none;
+        }
+
+        .gpp_button.gpp_btn-primary:active {
+            color: #fff;
+            background-color: #a01a43;
+            border-color: #a01a43;
+        }
+
+        .gpp_button.gpp_btn-primary:disabled,
+        .gpp_button.gpp_btn-primary.disabled {
+            color: #cecacb;
+            background-color: #ada7a9;
+            border-color: #ada7a9;
+            pointer-events: none;
+            opacity: 1;
+        }
+
+    .gpp_button.gpp_btn-primary-outline {
+        color: #d6235a;
+        background-color: #fff9f7;
+        border-color: #d6235a;
+    }
+
+        .gpp_button.gpp_btn-primary-outline:hover {
+            color: #ea91ac;
+            background-color: #fffcfb;
+            border-color: #ea91ac;
+            text-decoration: none;
+        }
+
+        .gpp_button.gpp_btn-primary-outline:active {
+            color: #a01a43;
+            background-color: #fff9f7;
+            border-color: #a01a43;
+        }
+
+        .gpp_button.gpp_btn-primary-outline:disabled,
+        .gpp_button.gpp_btn-primary-outline.disabled {
+            color: #d39aaa;
+            background-color: #d1cdcc;
+            border-color: #c48f9f;
+            pointer-events: none;
+            opacity: 1;
+        }
+
+    .gpp_button.gpp_btn-secondry {
+        color: #fff;
+        background-color: #2965cc;
+        border-color: #2965cc;
+    }
+
+        .gpp_button.gpp_btn-secondry:hover {
+            color: #fff;
+            background-color: #7fa3e0;
+            border-color: #7fa3e0;
+            text-decoration: none;
+        }
+
+        .gpp_button.gpp_btn-secondry:active {
+            color: #fff;
+            background-color: #1f4c99;
+            border-color: #1f4c99;
+        }
+
+        .gpp_button.gpp_btn-secondry:disabled,
+        .gpp_button.gpp_btn-secondry.disabled {
+            color: #cacbce;
+            background-color: #a7a9ad;
+            border-color: #a7a9ad;
+            pointer-events: none;
+            opacity: 1;
+        }
+
+    .gpp_button.gpp_btn-secondry-outline {
+        color: #2965cc;
+        background-color: #fbfcff;
+        border-color: #2965cc;
+    }
+
+        .gpp_button.gpp_btn-secondry-outline:hover {
+            color: #99b5e6;
+            background-color: #fbfcff;
+            border-color: #99b5e6;
+            text-decoration: none;
+        }
+
+        .gpp_button.gpp_btn-secondry-outline:active {
+            color: #1d478e;
+            background-color: #f7faff;
+            border-color: #1d478e;
+        }
+
+        .gpp_button.gpp_btn-secondry-outline:disabled,
+        .gpp_button.gpp_btn-secondry-outline.disabled {
+            color: #9baecf;
+            background-color: #ccced1;
+            border-color: #91a3c1;
+            pointer-events: none;
+            opacity: 1;
+        }
+
+    .gpp_button.gpp_btn-negative {
+        color: #fff;
+        background-color: #787878;
+        border-color: #787878;
+    }
+
+        .gpp_button.gpp_btn-negative:hover {
+            color: #fff;
+            background-color: #aeaeae;
+            border-color: #aeaeae;
+            text-decoration: none;
+        }
+
+        .gpp_button.gpp_btn-negative:active {
+            color: #fff;
+            background-color: #5a5a5a;
+            border-color: #5a5a5a;
+        }
+
+        .gpp_button.gpp_btn-negative:disabled,
+        .gpp_button.gpp_btn-negative.disabled {
+            color: #cccccc;
+            background-color: #aaaaaa;
+            border-color: #aaaaaa;
+            pointer-events: none;
+            opacity: 1;
+        }
+
+    .gpp_button.gpp_btn-negative-outline {
+        color: #787878;
+        background-color: #fafafa;
+        border-color: #787878;
+    }
+
+        .gpp_button.gpp_btn-negative-outline:hover {
+            color: #bbbbbb;
+            background-color: #fcfcfc;
+            border-color: #bbbbbb;
+            text-decoration: none;
+        }
+
+        .gpp_button.gpp_btn-negative-outline:active {
+            color: #545454;
+            background-color: #fafafa;
+            border-color: #545454;
+        }
+
+        .gpp_button.gpp_btn-negative-outline:disabled,
+        .gpp_button.gpp_btn-negative-outline.disabled {
+            color: #aaacad;
+            background-color: #ccced1;
+            border-color: #a8a8a8;
+            pointer-events: none;
+            opacity: 1;
+        }
+
+            .gpp_button.gpp_btn-negative-outline:disabled:before,
+            .gpp_button.gpp_btn-negative-outline.disabled:before {
+                color: #aaacad;
+            }
+
+    .gpp_button.gpp_btn-green {
+        color: #fff;
+        background-color: #0c8c00;
+        border-color: #0c8c00;
+    }
+
+        .gpp_button.gpp_btn-green:hover {
+            color: #fff;
+            background-color: #6dba66;
+            border-color: #6dba66;
+            text-decoration: none;
+        }
+
+        .gpp_button.gpp_btn-green:active {
+            color: #fff;
+            background-color: #096900;
+            border-color: #096900;
+        }
+
+        .gpp_button.gpp_btn-green:disabled,
+        .gpp_button.gpp_btn-green.disabled {
+            color: #cacdca;
+            background-color: #a6aba6;
+            border-color: #a6aba6;
+            pointer-events: none;
+        }
+
+    .gpp_button.gpp_btn-green-outline {
+        color: #0c8c00;
+        background-color: #ffffff;
+        border-color: #0c8c00;
+    }
+
+        .gpp_button.gpp_btn-green-outline:hover {
+            color: #6dba66;
+            background-color: #ffffff;
+            border-color: #6dba66;
+            text-decoration: none;
+        }
+
+        .gpp_button.gpp_btn-green-outline:active {
+            color: #096900;
+            background-color: #ffffff;
+            border-color: #096900;
+        }
+
+        .gpp_button.gpp_btn-green-outline:disabled,
+        .gpp_button.gpp_btn-green-outline.disabled {
+            color: #c8c8c8;
+            background-color: #aaaaaa;
+            border-color: #aaaaaa;
+            pointer-events: none;
+        }
+
+.gpp_nav-underline {
+    height: 8px;
+    min-width: 1170px;
+    width: 100%;
+    background: linear-gradient(90deg, #b9ceef, #edb4d0);
+}
+
+.page-header {
+    padding-bottom: 9.5px;
+    margin: 42px 0 21px;
+    border-bottom: 1px solid #eee;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url("fonts/icomoon.eot?7etakc");
+    src: url("fonts/icomoon.eot?7etakc#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?7etakc") format("truetype"), url("fonts/icomoon.woff?7etakc") format("woff"), url("fonts/icomoon.svg?7etakc#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-done:before {
+    content: "\e91c";
+    color: #999;
+}
+
+.icon-error:before {
+    content: "\e91d";
+    color: #999;
+}
+
+.icon-uploading:before {
+    content: "\e91e";
+    color: #999;
+}
+
+.icon-icon_cancel:before {
+    content: "\e91b";
+    color: #999;
+}
+
+.icon-icon_plus:before {
+    content: "\e917";
+    color: #999;
+}
+
+.icon-ico_file:before {
+    content: "\e918";
+    color: #a8a8a8;
+}
+
+.icon-ico_folder:before {
+    content: "\e919";
+    color: #969696;
+}
+
+.icon-ico_search:before {
+    content: "\e91a";
+    color: #878787;
+}
+
+.icon-area:before {
+    content: "\e913";
+    color: #999;
+}
+
+.icon-download:before {
+    content: "\e914";
+    color: #999;
+}
+
+.icon-select:before {
+    content: "\e915";
+    color: #999;
+}
+
+.icon-upload:before {
+    content: "\e916";
+    color: #999;
+}
+
+.icon-bmp:before {
+    content: "\e900";
+    color: #999;
+}
+
+.icon-csv:before {
+    content: "\e901";
+    color: #999;
+}
+
+.icon-doc:before,
+.icon-docx:before,
+.icon-docm:before {
+    content: "\e902";
+    color: #999;
+}
+
+.icon-dwg:before {
+    content: "\e903";
+    color: #999;
+}
+
+.icon-dxf:before {
+    content: "\e904";
+    color: #999;
+}
+
+.icon-emf:before {
+    content: "\e905";
+    color: #999;
+}
+
+.icon-gif:before {
+    content: "\e906";
+    color: #999;
+}
+
+.icon-jpeg:before {
+    content: "\e907";
+    color: #999;
+}
+
+.icon-jpg:before {
+    content: "\e908";
+    color: #999;
+}
+
+.icon-mail:before {
+    content: "\e909";
+    color: #999;
+}
+
+.icon-PDF:before {
+    content: "\e90a";
+    color: #999;
+}
+
+.icon-png:before {
+    content: "\e90b";
+    color: #999;
+}
+
+.icon-pptx:before,
+.icon-ppt:before,
+.icon-pptm:before {
+    content: "\e90c";
+    color: #999;
+}
+
+.icon-rtf:before {
+    content: "\e90d";
+    color: #999;
+}
+
+.icon-tif:before {
+    content: "\e90e";
+    color: #999;
+}
+
+.icon-tiff:before {
+    content: "\e90f";
+    color: #999;
+}
+
+.icon-txt:before {
+    content: "\e910";
+    color: #999;
+}
+
+.icon-wmf:before {
+    content: "\e911";
+    color: #999;
+}
+
+.icon-xls:before,
+.icon-xlsx:before,
+.icon-xlsm:before {
+    content: "\e912";
+    color: #999;
+}
+
+/* 99.utility
+------------------------------------*/
+/* spacing */
+/* margin */
+.gpp_mt-0 {
+    margin-top: 0px;
+}
+
+.gpp_mr-0 {
+    margin-right: 0px;
+}
+
+.gpp_mb-0 {
+    margin-bottom: 0px;
+}
+
+.gpp_ml-0 {
+    margin-left: 0px;
+}
+
+.gpp_mt-8 {
+    margin-top: 8px;
+}
+
+.gpp_mr-8 {
+    margin-right: 8px;
+}
+
+.gpp_mb-8 {
+    margin-bottom: 8px;
+}
+
+.gpp_ml-8 {
+    margin-left: 8px;
+}
+
+.gpp_mt-16 {
+    margin-top: 16px;
+}
+
+.gpp_mr-16 {
+    margin-right: 16px;
+}
+
+.gpp_mb-16 {
+    margin-bottom: 16px;
+}
+
+.gpp_ml-16 {
+    margin-left: 16px;
+}
+
+.gpp_mt-24 {
+    margin-top: 24px;
+}
+
+.gpp_mr-24 {
+    margin-right: 24px;
+}
+
+.gpp_mb-24 {
+    margin-bottom: 24px;
+}
+
+.gpp_ml-24 {
+    margin-left: 24px;
+}
+
+.gpp_mt-32 {
+    margin-top: 32px;
+}
+
+.gpp_mr-32 {
+    margin-right: 32px;
+}
+
+.gpp_mb-32 {
+    margin-bottom: 32px;
+}
+
+.gpp_ml-32 {
+    margin-left: 32px;
+}
+
+.gpp_mt-40 {
+    margin-top: 40px;
+}
+
+.gpp_mr-40 {
+    margin-right: 40px;
+}
+
+.gpp_mb-40 {
+    margin-bottom: 40px;
+}
+
+.gpp_ml-40 {
+    margin-left: 40px;
+}
+
+.gpp_mt-48 {
+    margin-top: 48px;
+}
+
+.gpp_mr-48 {
+    margin-right: 48px;
+}
+
+.gpp_mb-48 {
+    margin-bottom: 48px;
+}
+
+.gpp_ml-48 {
+    margin-left: 48px;
+}
+
+.gpp_mt-56 {
+    margin-top: 56px;
+}
+
+.gpp_mr-56 {
+    margin-right: 56px;
+}
+
+.gpp_mb-56 {
+    margin-bottom: 56px;
+}
+
+.gpp_ml-56 {
+    margin-left: 56px;
+}
+
+.gpp_mt-64 {
+    margin-top: 64px;
+}
+
+.gpp_mr-64 {
+    margin-right: 64px;
+}
+
+.gpp_mb-64 {
+    margin-bottom: 64px;
+}
+
+.gpp_ml-64 {
+    margin-left: 64px;
+}
+
+.gpp_mt-72 {
+    margin-top: 72px;
+}
+
+.gpp_mr-72 {
+    margin-right: 72px;
+}
+
+.gpp_mb-72 {
+    margin-bottom: 72px;
+}
+
+.gpp_ml-72 {
+    margin-left: 72px;
+}
+
+.gpp_mt-80 {
+    margin-top: 80px;
+}
+
+.gpp_mr-80 {
+    margin-right: 80px;
+}
+
+.gpp_mb-80 {
+    margin-bottom: 80px;
+}
+
+.gpp_ml-80 {
+    margin-left: 80px;
+}
+
+.gpp_mx-4 {
+    margin-right: 4px !important;
+    margin-left: 4px !important;
+}
+
+.gpp_mx-8 {
+    margin-right: 8px !important;
+    margin-left: 8px !important;
+}
+
+.gpp_mx-16 {
+    margin-right: 16px !important;
+    margin-left: 16px !important;
+}
+
+.gpp_mx-24 {
+    margin-right: 24px !important;
+    margin-left: 24px !important;
+}
+
+.gpp_mx-32 {
+    margin-right: 32px !important;
+    margin-left: 32px !important;
+}
+
+.gpp_mx-40 {
+    margin-right: 40px !important;
+    margin-left: 40px !important;
+}
+
+.gpp_mx-48 {
+    margin-right: 48px !important;
+    margin-left: 48px !important;
+}
+
+.gpp_mx-56 {
+    margin-right: 56px !important;
+    margin-left: 56px !important;
+}
+
+.gpp_mx-64 {
+    margin-right: 64px !important;
+    margin-left: 64px !important;
+}
+
+.gpp_tac {
+    text-align: center;
+}
+
+.gpp_grid-actions {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.gpp_disp_n {
+    display: none !important;
+}
+
+/* sizing percent */
+.gpp_w0p {
+    width: 0% !important;
+}
+
+.gpp_w10p {
+    width: 10% !important;
+}
+
+.gpp_w20p {
+    width: 20% !important;
+}
+
+.gpp_w25p {
+    width: 25% !important;
+}
+
+.gpp_w30p {
+    width: 30% !important;
+}
+
+.gpp_w33p {
+    width: 33% !important;
+}
+
+.gpp_w40p {
+    width: 40% !important;
+}
+
+.gpp_w50p {
+    width: 50% !important;
+}
+
+.gpp_w60p {
+    width: 60% !important;
+}
+
+.gpp_w66p {
+    width: 66% !important;
+}
+
+.gpp_w70p {
+    width: 70% !important;
+}
+
+.gpp_w75p {
+    width: 75% !important;
+}
+
+.gpp_w80p {
+    width: 80% !important;
+}
+
+.gpp_w90p {
+    width: 90% !important;
+}
+
+.gpp_w100p {
+    width: 100% !important;
+}
+
+/* sizing pixel */
+.gpp_w0px {
+    width: 0px !important;
+}
+
+.gpp_w10px {
+    width: 10px !important;
+}
+
+.gpp_w20px {
+    width: 20px !important;
+}
+
+.gpp_w30px {
+    width: 30px !important;
+}
+
+.gpp_w40px {
+    width: 40px !important;
+}
+
+.gpp_w50px {
+    width: 50px !important;
+}
+
+.gpp_w60px {
+    width: 60px !important;
+}
+
+.gpp_w70px {
+    width: 70px !important;
+}
+
+.gpp_w80px {
+    width: 80px !important;
+}
+
+.gpp_w90px {
+    width: 90px !important;
+}
+
+.gpp_w100px {
+    width: 100px !important;
+}
+
+.gpp_w110px {
+    width: 110px !important;
+}
+
+.gpp_w120px {
+    width: 120px !important;
+}
+
+.gpp_w130px {
+    width: 130px !important;
+}
+
+.gpp_w140px {
+    width: 140px !important;
+}
+
+.gpp_w150px {
+    width: 150px !important;
+}
+
+.gpp_w160px {
+    width: 160px !important;
+}
+
+.gpp_w170px {
+    width: 170px !important;
+}
+
+.gpp_w180px {
+    width: 180px !important;
+}
+
+.gpp_w190px {
+    width: 190px !important;
+}
+
+.gpp_w200px {
+    width: 200px !important;
+}
+
+.gpp_w210px {
+    width: 210px !important;
+}
+
+.gpp_w220px {
+    width: 220px !important;
+}
+
+.gpp_w230px {
+    width: 230px !important;
+}
+
+.gpp_w240px {
+    width: 240px !important;
+}
+
+.gpp_w250px {
+    width: 250px !important;
+}
+
+.gpp_w260px {
+    width: 260px !important;
+}
+
+.gpp_w270px {
+    width: 270px !important;
+}
+
+.gpp_w280px {
+    width: 280px !important;
+}
+
+.gpp_w290px {
+    width: 290px !important;
+}
+
+.gpp_w300px {
+    width: 300px !important;
+}
+
+.gpp_w310px {
+    width: 310px !important;
+}
+
+.gpp_w320px {
+    width: 320px !important;
+}
+
+.gpp_w330px {
+    width: 330px !important;
+}
+
+.gpp_w340px {
+    width: 340px !important;
+}
+
+.gpp_w350px {
+    width: 350px !important;
+}
+
+.gpp_w360px {
+    width: 360px !important;
+}
+
+.gpp_w370px {
+    width: 370px !important;
+}
+
+.gpp_w380px {
+    width: 380px !important;
+}
+
+.gpp_w390px {
+    width: 390px !important;
+}
+
+.gpp_w400px {
+    width: 400px !important;
+}
+
+.gpp_w410px {
+    width: 410px !important;
+}
+
+.gpp_w420px {
+    width: 420px !important;
+}
+
+.gpp_w430px {
+    width: 430px !important;
+}
+
+.gpp_w440px {
+    width: 440px !important;
+}
+
+.gpp_w450px {
+    width: 450px !important;
+}
+
+.gpp_w460px {
+    width: 460px !important;
+}
+
+.gpp_w470px {
+    width: 470px !important;
+}
+
+.gpp_w480px {
+    width: 480px !important;
+}
+
+.gpp_w490px {
+    width: 490px !important;
+}
+
+.gpp_w500px {
+    width: 500px !important;
+}
+
+
+.close-button {
+    border-radius: 25px;
+    background: pink;
+    padding: 1rem;
+    width: 150px;
+    border: 0;
+}
+
+.close-button-disabled {
+    border-radius: 25px;
+    background: gray;
+    padding: 1rem;
+    width: 150px;
+    border: 0;
+}
+
+.file-upload-rule {
+    padding: 14px;
+    padding-left: 30px; 
+    background-color: rgb(254,250,221);
+    width: 100%;
+    height: 170px;
+    border-radius: 12px;
+    border: 0;
+    color: rgb(149,73,0);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width: inherit;
+    max-width: inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    height: inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+
+label.gpp20-upload-changefilePath > input {
+    /* 透明度0 */
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    /* ブラウザのデフォルトのスタイルを削除 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* レイアウトから無視 */
+    position: absolute;
+}
+
+label.gpp20-upload-changefilePath > input:focus {
+        border: 1px solid #000;
+}
+
+label.gpp20-upload-changefilePath {
+    height: 44px;
+    width: 240px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    padding: 11px 14px 14px 14px;
+    font-size: 16px;
+    line-height: 1.42857;
+    text-decoration: none;
+    border-radius: 22px;
+    position: relative;
+    color: #2965cc;
+    background-color: #fbfcff;
+    border-color: #2965cc;
+}
+
+label.gpp20-upload-changefilePath::before {
+        font-size: 18px;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+        font-family: "icomoon" !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+label.gpp20-upload-changefilePath:focus {
+        border: 1px solid #000;
+    }
+
+div.gpp20-upload-filePathArea {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+span.gpp20-upload-filePathArea {
+    padding: 14px 14px 14px 14px;
+    color: #2965cc;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.upload-filename 
+{
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+.upload-filename-progress {
+    word-wrap: break-word;
+    text-align: center
+}
+.log-message{
+    margin: 30px;
+}

@@ -25,21 +25,16 @@
                 <input name="fileName" id="fileName" value="@ViewBag.fileName" onchange="checkAllEmpty()" class="gpp20-search-form gpp_w66p" placeholder="Enter file name ..." aria-label="Enter file name ...">
             </div>
             <div class="gpp20-inputgroup gpp20-datepicker">
-                <p class="input-label">ファイルアップロード日時</p>
+                <p class="input-label">Upload Date</p>
                 <div class="datepicker gpp_w66p">
-                    <input id="uploadDateFrom" name="uploadDateFrom" onchange="checkAllEmpty()" value="@ViewBag.uploadDateFrom" type="text" aria-label="開始日付"><span>～</span>
-                    <input id="uploadDateTo" name="uploadDateTo" onchange="checkAllEmpty()" value="@ViewBag.uploadDateTo" type="text" aria-label="終了日付">
+                    <input id="uploadDateFrom" name="uploadDateFrom" onchange="checkAllEmpty()" value="@ViewBag.uploadDateFrom" type="text" aria-label="From"><span>～</span>
+                    <input id="uploadDateTo" name="uploadDateTo" onchange="checkAllEmpty()" value="@ViewBag.uploadDateTo" type="text" aria-label="To">
                 </div>
             </div>
-            <div class="gpp20-inputgroup">
-                <p class="input-label">キーワードを設定して表示する</p>
-                <input name="keyWord" id="keyWord" value="@ViewBag.keyWord" onchange="checkAllEmpty()" class="gpp20-search-form gpp_w66p" placeholder="検索する文章を入力" aria-label="検索する文章を入力">
-            </div>
-            <input name="uid" id="uid" value="@ViewBag.uid" type="hidden">
-            <input name="at" id="at" value="@ViewBag.at" type="hidden">
+           
             <input name="currentPage" id="currentPage" value="@ViewBag.currentPage" type="hidden">
             <div class="gpp_tac gpp_mt-24">
-                <a disable class="gpp_button gpp_btn-secondry icon-ico_search disabled" onclick="submitForm()" id="btnSearch" href="javascript:void(0);">表示する</a>
+                <a disable class="gpp_button gpp_btn-secondry icon-ico_search disabled" onclick="submitForm()" id="btnSearch" href="javascript:void(0);">Search</a>
             </div>
         </form>
         <!--End Form Search-->
@@ -47,15 +42,15 @@
         {
             <div class="gpp20-searchresult-utility gpp_mt-32">
                 <div class="records">
-                    <p> <span>@Model.totalRecords</span>件が該当しました</p>
+                    <p> <span>@Model.totalRecords</span> record(s) found</p>
                 </div>
             </div>
             <table class="table_data gpp20_searchresult-table">
                 <thead>
                     <tr>
-                        <th>ファイル名</th>
-                        <th class="result-filesize">ファイルサイズ</th>
-                        <th class="result-day">アップロード日時    </th>
+                        <th>File Name</th>
+                        <th class="result-filesize">File Size</th>
+                        <th class="result-day">Uploaded Date</th>
                     </tr>
                 </thead>
                 <tbody id="pagination">

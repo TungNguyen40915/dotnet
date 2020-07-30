@@ -11,8 +11,6 @@
         var totalRecords = @ViewBag.totalRecords;
         var currentPage = @ViewBag.currentPage;
         var pageCount = @ViewBag.pageCount;
-        var maxLengthSearchFileName = @ViewBag.maxLengthSearchFileName;
-        var maxLengthSearchKeyword = @ViewBag.maxLengthSearchKeyword;
 </script>
 <!-- container -->
 <div class="container">
@@ -31,8 +29,9 @@
                     <input id="uploadDateTo" name="uploadDateTo" onchange="checkAllEmpty()" value="@ViewBag.uploadDateTo" type="text" aria-label="To">
                 </div>
             </div>
-           
+
             <input name="currentPage" id="currentPage" value="@ViewBag.currentPage" type="hidden">
+            <input name="userId" id="userId" value="@ViewBag.UserId" type="hidden">
             <div class="gpp_tac gpp_mt-24">
                 <a disable class="gpp_button gpp_btn-secondry icon-ico_search disabled" onclick="submitForm()" id="btnSearch" href="javascript:void(0);">Search</a>
             </div>
@@ -58,10 +57,10 @@
                     {
                         <tr class="row-item">
                             <td>
-                                <p class="result-filename"><a class="result-filelink" value="@item.FileName" href="/Download/index?uid=@ViewBag.uid&at=@ViewBag.at&fiid=@item.GUID">@Html.DisplayFor(modelItem => item.FileName)</a></p>
+                                <p class="result-filename"><a class="result-filelink" value="@item.FileName" href="/Download/index?ffid=@item.GUID&userid=@ViewBag.UserId">@Html.DisplayFor(modelItem => item.FileName)</a></p>
                                 <p class="result-filepass">
                                     <script language="javascript">
-                                            document.write(window.location.origin+"/Download/index?uid=@ViewBag.uid&at=@ViewBag.at&fiid=@item.GUID");
+                                            document.write(window.location.origin+"/Download/index?ffid=@item.GUID&userid=@ViewBag.UserId");
                                     </script>
                                 </p>
                             </td>
@@ -79,7 +78,7 @@
         else if (Model != null)
         {
             <div class="gpp20-searchresult-utility gpp_mt-32"></div>
-            <p class="input-label">ご入力条件での結果が見つかりません。</p>
+            <p class="input-label">No result found</p>
             <div class="gpp20-searchresult-utility gpp_mt-32"></div>
         }
         else
@@ -90,10 +89,8 @@
             <input id="fileNameVB" value="@ViewBag.fileName" type="hidden">
             <input id="uploadDateFromVB" value="@ViewBag.uploadDateFrom" type="hidden">
             <input id="uploadDateToVB" value="@ViewBag.uploadDateTo" type="hidden">
-            <input id="keyWordVB" value="@ViewBag.keyWord" type="hidden">
-            <input id="uidVB" value="@ViewBag.uid" type="hidden">
-            <input id="atVB" value="@ViewBag.at" type="hidden">
             <input id="currentPageVB" value="@ViewBag.currentPage" type="hidden">
+            <input id="userId" value="@ViewBag.UserId" type="hidden">
         </form>
     </div>
 </div>
@@ -102,13 +99,13 @@
         <div class="modal-dialog vertical-align-center">
             <div class="modal-content">
                 <div style="text-align: center" class="modal-header">
-                    <h5 class="modal-title">エラー</h5>
+                    <h5 class="modal-title">Error</h5>
                 </div>
                 <div style="text-align: center" class="modal-body">
 
                 </div>
                 <div style="text-align: right" class="modal-footer">
-                    <button type="button" class="close-button" onclick="resetModal()">閉じる </button>
+                    <button type="button" class="close-button" onclick="resetModal()">Close </button>
                 </div>
             </div>
         </div>

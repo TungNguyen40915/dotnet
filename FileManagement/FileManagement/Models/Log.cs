@@ -12,7 +12,6 @@ namespace sharedfile.Models
         public string UserId { get; set; }
         public string Division { get; set; }
         public DateTime OperationDate { get; set; }
-        public string FileAreaGUID { get; set; }
         public string FileGUID { get; set; }
         public string LogType { get; set; }
         public string ErrorLogTrace { get; set; }

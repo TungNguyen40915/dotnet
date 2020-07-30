@@ -48,6 +48,7 @@ namespace sharedfile.Controllers
             {
                 IUploadService _us = new UploadServicesImp(_context, _config);
 
+                string userId = Request.Query[Constants.USER_ID];
 
                 bool validate = _us.ValidationFiles(files);
 
@@ -56,7 +57,7 @@ namespace sharedfile.Controllers
                     return Json(new { success = "false", message = "Something Went Wrong!" });
                 }
 
-                if (!_us.UploadFile(files))
+                if (!_us.UploadFile(userId, files))
                 {
                     return Json(new { success = "false", message = "Something Went Wrong!" });
                 }

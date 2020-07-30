@@ -4,11 +4,11 @@
     {
         public static readonly string ERROR_PATH = "~/Views/Shared/Error.cshtml";
 
-        public static readonly string USER_ID = "uid";
+        public static readonly string USER_ID = "userid";
 
         public static readonly string ACCESS_TOKEN = "at";
 
-        public static readonly string FIID = "fFid";
+        public static readonly string FIID = "ffid";
 
         public static readonly string FNAME = "fname";
 
@@ -54,10 +54,6 @@
 
         public static readonly string MAX_LENGTH_FILE_NAME = "validExtension:maxLengthFileName";
 
-        public static readonly string MAX_LENGTH_SEARCH_FILENAME = "validExtension:maxLengthSearchFileName";
-
-        public static readonly string MAX_LENGTH_SEARCH_KEYWORD = "validExtension:maxLengthSearchKeyword";
-
         public static readonly string MAX_LENGTH_SEARCH_USERID = "validExtension:maxLengthSearchUserId";
 
         public static readonly string CALL_BACK_URL = "SANITIZE_CALLBACK_URL";
@@ -79,8 +75,6 @@
         public static readonly string UPLOAD_DATE_FROM = "uploadDateFrom";
 
         public static readonly string UPLOAD_DATE_TO = "uploadDateTo";
-
-        public static readonly string KEYWORD = "keyWord";
 
         public static readonly string CURRENT_PAGE = "currentPage";
 

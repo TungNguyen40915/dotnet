@@ -1,4 +1,5 @@
-﻿@{ ViewBag.Title = "ログ管理"; }
+﻿@{ ViewBag.Title = "Log"; }
+
 
 
 <meta charset="utf-8">
@@ -10,59 +11,44 @@
 
 <!-- container -->
 <div class="container">
-    <div class="page-heading gpp_page-heading">
-        <ul class="breadcrumb">
-            <li>
-                @Html.ActionLink("ホーム", "GoBackD365", "Home", new { uid = @ViewBag.uid, actionHeader = "Home" })
-            </li>
-            <li class="active">@ViewBag.Title</li>
-        </ul>
-        <div class="gpp_mt-32 page-header">
-            <h1 class="hd2-type01">@ViewBag.Title</h1>
-        </div>
-    </div>
-    <!-- ログ出力条件設定エリア-->
     <form id="searchForm" asp-controller="Log" asp-action="Search" method="GET" enctype="multipart/form-data">
         <div class="gpp20-section">
             <div class="gpp20-inputgroup">
-                <p class="input-label">ファイル名を設定する</p>
-                <input class="gpp20-search-form gpp_w66p" placeholder="ファイル名を入力" aria-label="ファイル名を入力" name="fileName" id="fileName" value="@ViewBag.fileName" />
+                <p class="input-label">Filename</p>
+                <input class="gpp20-search-form gpp_w66p" placeholder="Filename" aria-label="Filename" name="fileName" id="fileName" value="@ViewBag.fileName" />
             </div>
             <div class="gpp20-inputgroup">
-                <p class="input-label">ユーザーIDを設定する</p>
-                <input class="gpp20-search-form gpp_w66p" placeholder="ユーザーIDを入力" aria-label="ユーザーIDを入力" name="userId" id="userId" value="@ViewBag.userId">
+                <p class="input-label">Username</p>
+                <input class="gpp20-search-form gpp_w66p" placeholder="UserId" aria-label="UserId" name="userId" id="userId" value="@ViewBag.userId">
             </div>
             <div class="gpp20-inputgroup">
-                <p class="input-label">ファイル操作区分</p>
+                <p class="input-label">Operation Type</p>
                 <div class="chkbox-group">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" name="upload" id="upload" value="true" checked="@ViewBag.upload">アップロード
+                            <input type="checkbox" name="upload" id="upload" value="true" checked="@ViewBag.upload">Upload
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" name="download" id="download" value="true" checked="@ViewBag.download">ダウンロード
+                            <input type="checkbox" name="download" id="download" value="true" checked="@ViewBag.download">Download
                         </label>
                     </div>
                 </div>
             </div>
             <div class="gpp20-inputgroup gpp20-datepicker">
-                <p class="input-label">アクセス日時の期間を設定する</p>
+                <p class="input-label">Operation Date</p>
                 <div class="datepicker gpp_w66p">
-                    <input id="fromDate" name="fromDate" aria-label="開始日付" value="@ViewBag.fromDate">
+                    <input id="fromDate" name="fromDate" aria-label="From Date" value="@ViewBag.fromDate">
                     <span>～</span>
-                    <input id="toDate" name="toDate" aria-label="終了日付" value="@ViewBag.toDate">
+                    <input id="toDate" name="toDate" aria-label="To Date" value="@ViewBag.toDate">
                 </div>
             </div>
         </div>
         <input id="page" type="hidden" name="page" />
-        <input name="uid" id="uid" value=@ViewBag.uid type="hidden">
-        <input name="at" id="at" value=@ViewBag.at type="hidden">
-        <input name="ro" id="ro" value=@ViewBag.ro type="hidden">
     </form>
     <div class="gpp_tac gpp_mt-24">
-        <button id="submitButton" class="gpp_button gpp_btn-secondry icon-ico_search" onclick="submitForm()">表示する</button>
+        <button id="submitButton" class="gpp_button gpp_btn-secondry icon-ico_search" onclick="submitForm()">Search</button>
     </div>
 
     @if (ViewBag.data.modelList != null)
@@ -76,31 +62,24 @@
             <input type="hidden" id="toDateInput" name="toDate" value="@ViewBag.toDate">
             <input type="hidden" id="type" name="type">
             <input id="pageInput" type="hidden" name="page" value="@ViewBag.data.currentPage">
-            <input name="uid" id="uid" value=@ViewBag.uid type="hidden">
-            <input name="at" id="at" value=@ViewBag.at type="hidden">
-            <input name="ro" id="ro" value=@ViewBag.ro type="hidden">
         </form>
 
         @if (Enumerable.Count(ViewBag.data.modelList) > 0)
-        {<!-- ログ表示エリア-->
+        {
             <div class="gpp20-section">
                 <div class="gpp20-logview-utility">
                     <div class="records">
-                        <p>総件数：<span>@ViewBag.data.totalRecords</span>件</p>
-                    </div>
-                    <div class="btn-group">
-                        <a class="gpp_button gpp_btn-secondry icon-download gpp_mr-16" onclick="exportExcel()">Excel形式でダウンロード</a>
-                        <a class="gpp_button gpp_btn-secondry-outline icon-download" onclick="exportCSV()">CSV形式でダウンロード</a>
+                        <p><span>@ViewBag.data.totalRecords</span> record(s) found</p>
                     </div>
                 </div>
                 <div class="gpp20-overflowtable">
                     <table class="gpp20_log-table">
                         <thead>
                             <tr>
-                                <th colspan="2" class="gpp_w10p">アクセス日時</th>
-                                <th colspan="2" class="gpp_w30p">ユーザーID</th>
-                                <th class="gpp_w10p">ファイル操作区分</th>
-                                <th colspan="2">ファイル名</th>
+                                <th colspan="2" class="gpp_w10p">Operation Date</th>
+                                <th colspan="2" class="gpp_w30p">UserId</th>
+                                <th class="gpp_w10p">Operation Type</th>
+                                <th colspan="2">Filename</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -118,11 +97,11 @@
 
                                     @if (item.log.Division == "1")
                                     {
-                                        <td>アップロード</td>
+                                        <td>Upload</td>
                                     }
                                     @if (item.log.Division == "2")
                                     {
-                                        <td>ダウンロード</td>
+                                        <td>Download</td>
                                     }
                                     <td colspan="2">
                                         @item.file.FileName
@@ -140,12 +119,10 @@
         }
         else
         {
-            <div class="log-message">ご入力条件での結果が見つかりません。</div>}}
-
-    @if (ViewBag.data.modelList == null)
-    {
-        <div class="log-message">ログの表示対象とする検索条件を設定してください。</div>
+            <div class="log-message">No result found</div>
+        }
     }
+
 </div>
 
 <div class="modal" tabindex="-1" role="dialog" id="form-modal-message">
@@ -153,7 +130,7 @@
         <div class="modal-dialog vertical-align-center">
             <div class="modal-content">
                 <div style="text-align: center" class="modal-header">
-                    <h5 class="modal-title"></h5>
+                    <h5 class="modal-title">Error</h5>
                 </div>
                 <div style="text-align: center" class="modal-body">
                 </div>
@@ -170,8 +147,6 @@
         var numPerPage = 10;
         var currentPage = @ViewBag.data.currentPage;
         var totalRecords = @ViewBag.data.totalRecords;
-        var maxLengthSearchFileName = @ViewBag.maxLengthSearchFileName;
-        var maxLengthSearchUserId = @ViewBag.maxLengthSearchUserId;
 
 </script>
 <script src="~/lib/jquery/dist/jquery-3.5.1.min.js"></script>

@@ -1,10 +1,10 @@
 ﻿@{ ViewBag.Title = "index"; }
 
-<a href='@Url.Action("Index", "Upload")'>
+<a href='@Url.Action("Index", "Upload", new { userid = "SampleUserId"})'>
     UPLOAD FILE
 </a>
 
-<a href='@Url.Action("Index", "Search")'>
+<a href='@Url.Action("Index", "Search", new { userid = "SampleUserId"})'>
     SEARCH FILE
 </a>
 

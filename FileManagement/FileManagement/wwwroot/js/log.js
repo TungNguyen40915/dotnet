@@ -43,35 +43,22 @@ function checkDate(date) {
 function submitForm() {
     var validation = validateInput();
     var inputCheck = checkInput();
-    if (validation && inputCheck)
-    {
+    if (validation && inputCheck) {
         $("#page").val(1);
         $("#searchForm").submit();
     }
 }
 
 function validateInput() {
-    if ($("#fileName").val().length > maxLengthSearchFileName) {
-        resetModal();
-        $('#form-modal-message .modal-body').text("ファイル名 " + maxLengthSearchFileName + " 文字以内でご入力ください。");
-        $('#form-modal-message').modal('show');
-        return false;
-    }
-    if ($("#userId").val().length > maxLengthSearchUserId) {
-        resetModal();
-        $('#form-modal-message .modal-body').text("ユーザーID " + maxLengthSearchUserId + " 文字以内でご入力ください。");
-        $('#form-modal-message').modal('show');
-        return false;
-    }
     if (($('#fromDate').datepicker('getDate') != null && !checkDate($('#fromDate').val())) || ($('#toDate').datepicker('getDate') != null && !checkDate($('#toDate').val()))) {
         resetModal();
-        $('#form-modal-message .modal-body').text("「アクセス日時の期間を設定する」に誤りがあります");
+        $('#form-modal-message .modal-body').text("Invalid Operation Date");
         $('#form-modal-message').modal('show');
         return false;
     }
     if ($('#fromDate').datepicker('getDate') != null && $('#toDate').datepicker('getDate') != null && $('#fromDate').datepicker('getDate') > $('#toDate').datepicker('getDate')) {
         resetModal();
-        $('#form-modal-message .modal-body').text("終了日付に開始日付より前の日付入力できません、再度確認してください。");
+        $('#form-modal-message .modal-body').text("The end date can not be earlier than the start date");
         $('#form-modal-message').modal('show');
         return false;
     }
@@ -80,17 +67,6 @@ function validateInput() {
 
 function resetModal() {
     $('#form-modal-message').modal('hide');
-}
-
-function exportCSV() {
-    $("#type").val("csv");
-    console.log($("#type").val());
-    $("#ExportFile").submit();
-}
-function exportExcel() {
-    $("#type").val("excel");
-    console.log($("#type").val());
-    $("#ExportFile").submit();
 }
 
 function paging(num) {

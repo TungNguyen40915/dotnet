@@ -7,7 +7,7 @@ namespace sharedfile.Models
     public class SearchLogViewModel
     {
         public Log log { get; set; }
-        public FileManagement file { get; set; }
+        public Ffile file { get; set; }
     }
 
     public class SearchLogViewModelList

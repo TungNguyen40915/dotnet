@@ -1,5 +1,4 @@
-﻿using log4net;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.Storage;
 using Microsoft.Azure.Storage.Auth;
 using Microsoft.Azure.Storage.Blob;
@@ -15,10 +14,7 @@ namespace sharedfile.Services.Imp
     public class UploadServicesImp : IUploadService
     {
         private MyContext _context;
-
         private readonly IConfiguration _config;
-
-        private readonly ILog _logger = LogManager.GetLogger(typeof(UploadServicesImp));
 
         public UploadServicesImp(MyContext context, IConfiguration config)
         {
@@ -26,7 +22,7 @@ namespace sharedfile.Services.Imp
             _config = config;
         }
 
-        public bool UploadFile(IList<IFormFile> files)
+        public bool UploadFile(string userId, IList<IFormFile> files)
         {
             try
             {
@@ -45,13 +41,12 @@ namespace sharedfile.Services.Imp
 
                 foreach (IFormFile file in files)
                 {
-                    UploadFile(file, container);
+                    UploadFile(userId, file, container);
                 }
                 return true;
             }
             catch (Exception e)
             {
-                _logger.Error(e.ToString());
                 throw e;
             }
         }
@@ -104,12 +99,11 @@ namespace sharedfile.Services.Imp
             }
             catch (Exception e)
             {
-                _logger.Error(e.ToString());
                 return false;
             }
         }
 
-        private void UploadFile(IFormFile uploadFile, CloudBlobContainer container)
+        private void UploadFile(string userId, IFormFile uploadFile, CloudBlobContainer container)
         {
             string fileGUID = "";
             try
@@ -126,46 +120,44 @@ namespace sharedfile.Services.Imp
                 var blobUrl = blob.Uri.AbsoluteUri;
 
 
-                FileManagement fileManagement = new FileManagement();
+                Ffile fileManagement = new Ffile();
                 fileManagement.BlobUrl = blobUrl;
                 fileManagement.FileName = uploadFile.FileName;
+                fileManagement.UserId = userId;
                 fileManagement.FileUniqueName = generatedName;
                 fileManagement.FileSize = uploadFile.Length;
                 fileManagement.DeleteFlag = false;
-                fileManagement.UploadedDate = System.DateTime.UtcNow;
-                _context.FileManagements.Add(fileManagement);
+                fileManagement.UploadedDate = System.DateTime.Now;
+                _context.Files.Add(fileManagement);
                 _context.SaveChanges();
 
 
                 fileGUID = fileManagement.GUID;
 
-                //new LogServicesImp(_context, _config).SaveLog(
-                //    userId,                                                 
-                //    _config.GetValue<string>(Constants.DIVISION_UPLOAD),   
-                //    ffid,                                                   
-                //    fileGUID,                                               
-                //    _config.GetValue<string>(Constants.LOG_TYPE_NORMAL),    
-                //    null                                                   
-                //    );
+                new LogServicesImp(_context, _config).SaveLog(
+                    userId,
+                    _config.GetValue<string>(Constants.DIVISION_UPLOAD),
+                    fileGUID,
+                    _config.GetValue<string>(Constants.LOG_TYPE_NORMAL),
+                    null
+                    );
 
             }
             catch (Exception e)
             {
-                _logger.Error(e.ToString());
                 try
                 {
-                    //new LogServicesImp(_context, _config).SaveLog(
-                    //    userId,                                                                       
-                    //     _config.GetValue<string>(Constants.DIVISION_UPLOAD),                          
-                    //     ffid,                                                                          
-                    //     fileGUID,                                                                   
-                    //     _config.GetValue<string>(Constants.LOG_TYPE_ERROR),                           
-                    //     (uploadFile != null ? GetFileName(uploadFile.FileName) : "") + " | " + e.ToString()       
-                    //    );
+                    new LogServicesImp(_context, _config).SaveLog(
+                        userId,
+                         _config.GetValue<string>(Constants.DIVISION_UPLOAD),
+                         fileGUID,
+                         _config.GetValue<string>(Constants.LOG_TYPE_ERROR),
+                         (uploadFile != null ? uploadFile.FileName : "") + " | " + e.ToString()
+                        );
                 }
                 catch (Exception exception)
                 {
-                    _logger.Error(exception.ToString());
+                    Console.WriteLine(exception.ToString());
                 }
                 finally
                 {

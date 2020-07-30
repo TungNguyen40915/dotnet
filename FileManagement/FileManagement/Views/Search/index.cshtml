@@ -1,6 +1,6 @@
 ﻿@model sharedfile.Models.SearchVM
 @{
-    ViewBag.Title = "ファイル検索";
+    ViewBag.Title = "Search File";
 }
 
 <link href="~/css/style.css" rel="stylesheet" />
@@ -16,25 +16,13 @@
 </script>
 <!-- container -->
 <div class="container">
-    <div class="page-heading gpp_page-heading">
-        <ul class="breadcrumb">
-            <li>
-                @Html.ActionLink("ホーム", "GoBackD365", "Home", new { uid = @ViewBag.uid, actionHeader = "Home" })
-            </li>
-            <li class="active">@ViewBag.Title</li>
-        </ul>
-        <div class="gpp_mt-32 page-header">
-            <h1 class="hd2-type01">@ViewBag.Title</h1>
-        </div>
-    </div>
-    <!-- 検索機能エリア-->
     <div class="gpp20-section">
         <!--Start Form Search-->
         <form asp-controller="Search" asp-action="Search" method="get" enctype="multipart/form-data" id="searchViewModel">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="gpp20-inputgroup">
-                <p class="input-label">ファイル名を設定して表示する</p>
-                <input name="fileName" id="fileName" value="@ViewBag.fileName" onchange="checkAllEmpty()" class="gpp20-search-form gpp_w66p" placeholder="検索するファイル名を入力" aria-label="検索するファイル名を入力">
+                <p class="input-label">File Name</p>
+                <input name="fileName" id="fileName" value="@ViewBag.fileName" onchange="checkAllEmpty()" class="gpp20-search-form gpp_w66p" placeholder="Enter file name ..." aria-label="Enter file name ...">
             </div>
             <div class="gpp20-inputgroup gpp20-datepicker">
                 <p class="input-label">ファイルアップロード日時</p>

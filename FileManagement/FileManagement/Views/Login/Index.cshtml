@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container">
+    <form id="login" asp-controller="Login" asp-action="Authenticate" method="POST" enctype="multipart/form-data">
+        <div class="gpp20-section">
+            <div class="gpp20-inputgroup">
+                <p class="input-label">Username</p>
+                <input class="gpp20-search-form gpp_w66p" placeholder="Enter username" aria-label="username" name="username" id="username" value="@ViewBag.username" />
+            </div>
+            <div class="gpp20-inputgroup">
+                <p class="input-label">Password</p>
+                <input class="gpp20-search-form gpp_w66p" type="password" placeholder="Enter password" aria-label="password" name="password" id="password" value="@ViewBag.password" />
+            </div>
+        </div>
+    </form>
+
+    <div class="gpp_tac gpp_mt-24">
+        <button id="login" class="gpp_button gpp_btn-secondry" onclick="doLogin()" style="margin-bottom: 20px;">Log in</button>
+    </div>
+</div>
+
+<div tabindex="-1" role="dialog" id="form-modal-message" data-backdrop="static" data-keyboard="false" class="gpp20modalWindow modal">
+    <div class="status-area">
+        <span class="status-msg">Error</span>
+    </div>
+    <div style="text-align: center;" class="filelist">
+
+    </div>
+    <div class="modal-inr-btn gpp_mt-16">
+        <button id="close02" class="gpp_button gpp_btn-negative-outline icon-icon_cancel" onclick="resetModal()">Close</button>
+    </div>
+</div>
+
+<script src="~/js/login.js"></script>

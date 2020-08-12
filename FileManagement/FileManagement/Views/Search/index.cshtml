@@ -1,17 +1,10 @@
-﻿@model sharedfile.Models.SearchVM
-@{
+﻿@{
     ViewBag.Title = "Search File";
 }
 
 <link href="~/css/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
-        var numPerPage = @ViewBag.MaxItems;
-        var totalRecords = @ViewBag.totalRecords;
-        var currentPage = @ViewBag.currentPage;
-        var pageCount = @ViewBag.pageCount;
-</script>
 <!-- container -->
 <div class="container">
     <div class="gpp20-section">
@@ -30,68 +23,69 @@
                 </div>
             </div>
 
-            <input name="currentPage" id="currentPage" value="@ViewBag.currentPage" type="hidden">
-            <input name="userId" id="userId" value="@ViewBag.UserId" type="hidden">
             <div class="gpp_tac gpp_mt-24">
                 <a disable class="gpp_button gpp_btn-secondry icon-ico_search disabled" onclick="submitForm()" id="btnSearch" href="javascript:void(0);">Search</a>
             </div>
         </form>
         <!--End Form Search-->
-        @if (Model != null && Model.files != null && Model.files.Count() > 0)
-        {
-            <div class="gpp20-searchresult-utility gpp_mt-32">
-                <div class="records">
-                    <p> <span>@Model.totalRecords</span> record(s) found</p>
-                </div>
+
+        <div class="gpp20-searchresult-utility gpp_mt-32">
+            <div class="records">
+                <p> <span>@ViewBag.totalRecords</span> records found</p>
             </div>
-            <table class="table_data gpp20_searchresult-table">
-                <thead>
-                    <tr>
-                        <th>File Name</th>
-                        <th class="result-filesize">File Size</th>
-                        <th class="result-day">Uploaded Date</th>
-                    </tr>
-                </thead>
-                <tbody id="pagination">
-                    @foreach (var item in Model.files)
+        </div>
+
+
+        <table class="table_data gpp20_searchresult-table gpp_mb-32">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th class="result-filesize">File Size</th>
+                    <th class="result-day">Uploaded Date</th>
+                </tr>
+            </thead>
+            <tbody id="pagination">
+
+                @if (ViewBag.files.Count > 0)
+                {
+                    @foreach (var item in ViewBag.files)
                     {
                         <tr class="row-item">
                             <td>
-                                <p class="result-filename"><a class="result-filelink" value="@item.FileName" href="/Download/index?ffid=@item.GUID&userid=@ViewBag.UserId">@Html.DisplayFor(modelItem => item.FileName)</a></p>
+                                <p class="result-filename"><a class="result-filelink" value="@item.FileName" href="/Download/index?ffid=@item.GUID">@item.FileName</a></p>
                                 <p class="result-filepass">
                                     <script language="javascript">
-                                            document.write(window.location.origin+"/Download/index?ffid=@item.GUID&userid=@ViewBag.UserId");
+                                            document.write(window.location.origin+"/Download/index?ffid=@item.GUID");
                                     </script>
                                 </p>
                             </td>
-                            <td class="result-filesize">@((item.FileSize /1024).ToString("0.00"))KB</td>
+                            @if (item.FileSize >= 1048576)
+                            {
+                                <td class="result-filesize">@((item.FileSize / 1048576).ToString("0.00"))MB</td>
+                            }
+                            else if (item.FileSize >= 1024)
+                            {
+                                <td class="result-filesize">@((item.FileSize / 1024).ToString("0.00"))KB</td>
+                            }
+                            else
+                            {
+                                <td class="result-filesize">@((item.FileSize).ToString("0.00"))B</td>
+                            }
+
                             <td class="result-day">@Convert.ToDateTime(item.UploadedDate).ToString("yyyy/MM/dd HH:mm")</td>
                         </tr>
                     }
-                </tbody>
-            </table>
-            <div class="gpp20-pagination">
-                <ul class="pagination pagination-sm custom-pagination">
-                </ul>
-            </div>
-        }
-        else if (Model != null)
-        {
-            <div class="gpp20-searchresult-utility gpp_mt-32"></div>
-            <p class="input-label">No result found</p>
-            <div class="gpp20-searchresult-utility gpp_mt-32"></div>
-        }
-        else
-        {
-            <div class="gpp20-searchresult-utility gpp_mt-32"></div>
-        }
-        <form asp-controller="Search" asp-action="Search" method="get" enctype="multipart/form-data" id="paging-search">
-            <input id="fileNameVB" value="@ViewBag.fileName" type="hidden">
-            <input id="uploadDateFromVB" value="@ViewBag.uploadDateFrom" type="hidden">
-            <input id="uploadDateToVB" value="@ViewBag.uploadDateTo" type="hidden">
-            <input id="currentPageVB" value="@ViewBag.currentPage" type="hidden">
-            <input id="userId" value="@ViewBag.UserId" type="hidden">
-        </form>
+                }
+                else
+                {
+                    <tr>
+                        <td>
+                            No file found.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>
 <div class="modal" tabindex="-1" role="dialog" id="form-modal-message">
@@ -111,6 +105,16 @@
         </div>
     </div>
 </div>
+
+<div class="gpp_mt-32">
+    <a class="result-filelink" value="View All Files" href="/home">Back</a>
+</div>
+
+
+
+
+
+
 <script src="~/lib/jquery/dist/jquery-3.5.1.min.js"></script>
 <script src="~/lib/jquery/dist/jquery-ui.js"></script>
 <script src="~/lib/jquery/dist/script.js"></script>

@@ -44,12 +44,3 @@ function checkDate(date) {
 function resetModal() {
     $('#form-modal-message').modal('hide');
 }
-
-function paging(num) {
-    if (num < 1 || num > parseInt(pageCount)) return;
-    $("#currentPage").val(num);
-    $("#fileName").val($("#fileNameVB").val());
-    $("#uploadDateFrom").val($("#uploadDateFromVB").val());
-    $("#uploadDateTo").val($("#uploadDateToVB").val());
-    $("#searchViewModel").submit();
-}

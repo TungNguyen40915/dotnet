@@ -7,5 +7,6 @@ namespace sharedfile.Services
     {
         public Ffile GetFileManagement(string ffid);
         public Stream DownloadFile(string userId, string guid, string fileUniqueName);
+        public bool DeleteFile(string userId, string guid, string fileUniqueName);
     }
 }

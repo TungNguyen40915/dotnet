@@ -663,6 +663,7 @@ footer {
     .result-filename a[value$=".tiff"]::before {
         content: "\e90f";
     }
+
     .result-filename a[value$=".ppt"]::before,
     .result-filename a[value$=".pptx"]::before,
     .result-filename a[value$=".pptm"]::before {
@@ -1012,7 +1013,7 @@ button {
     display: inline;
     width: 72px;
     height: 72px;
-    background:  url('../image/uploading.svg');
+    background: url('../image/uploading.svg');
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateZ(0);
@@ -1636,6 +1637,7 @@ button.gpp_button:focus {
             margin: 0;
             line-height: 1.2;
             white-space: normal;
+            word-break: break-all;
         }
 
 .gpp_btn-primary[class^="icon-"], .gpp_btn-primary[class*=" icon-"],
@@ -3030,7 +3032,7 @@ input.gpp20-search-form {
 
 .file-upload-rule {
     padding: 14px;
-    padding-left: 30px; 
+    padding-left: 30px;
     background-color: rgb(254,250,221);
     width: 100%;
     height: 170px;
@@ -3080,9 +3082,9 @@ label.gpp20-upload-changefilePath > input {
     position: absolute;
 }
 
-label.gpp20-upload-changefilePath > input:focus {
+    label.gpp20-upload-changefilePath > input:focus {
         border: 1px solid #000;
-}
+    }
 
 label.gpp20-upload-changefilePath {
     height: 44px;
@@ -3108,7 +3110,7 @@ label.gpp20-upload-changefilePath {
     border-color: #2965cc;
 }
 
-label.gpp20-upload-changefilePath::before {
+    label.gpp20-upload-changefilePath::before {
         font-size: 18px;
         position: absolute;
         top: 11px;
@@ -3125,7 +3127,7 @@ label.gpp20-upload-changefilePath::before {
         -moz-osx-font-smoothing: grayscale;
     }
 
-label.gpp20-upload-changefilePath:focus {
+    label.gpp20-upload-changefilePath:focus {
         border: 1px solid #000;
     }
 
@@ -3134,6 +3136,7 @@ div.gpp20-upload-filePathArea {
     justify-content: space-between;
     padding-bottom: 14px;
 }
+
 span.gpp20-upload-filePathArea {
     padding: 14px 14px 14px 14px;
     color: #2965cc;
@@ -3141,8 +3144,7 @@ span.gpp20-upload-filePathArea {
     font-size: 16px;
 }
 
-.upload-filename 
-{
+.upload-filename {
     max-width: 400px;
     word-wrap: break-word;
 }
@@ -3151,6 +3153,21 @@ span.gpp20-upload-filePathArea {
     word-wrap: break-word;
     text-align: center
 }
-.log-message{
+
+.log-message {
     margin: 30px;
+}
+
+.containerflex {
+    display: flex; /*Kích hoạt flexbox*/
+    flex-direction: row; /*Thiết lập hướng chính*/
+    flex-wrap: nowrap; /*Thiết lập chế độ wrap, khi các phần tử vượt qua kích thước hướng chính*/
+    justify-content: space-between;
+}
+
+.flexitem {
+    padding: 20px;
+    background: lightblue;
+    margin: 1px;
+    font-weight: bold;
 }

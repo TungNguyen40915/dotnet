@@ -21,12 +21,11 @@ namespace sharedfile.Services.Imp
         }
 
 
-        public SearchVM SearchFiles(string fileName, string uploadDayFrom, string uploadDayTo, int currentPage)
+        public List<Ffile> SearchFiles(string fileName, string uploadDayFrom, string uploadDayTo, string userId)
         {
             List<Ffile> files = new List<Ffile>();
 
-
-            if (!validate(fileName, uploadDayFrom, uploadDayTo)) throw new Exception();
+            if (!validate(fileName, uploadDayFrom, uploadDayTo, userId)) throw new Exception();
 
             DateTime fromTime;
             DateTime toTime;
@@ -47,7 +46,7 @@ namespace sharedfile.Services.Imp
             if (string.IsNullOrEmpty(fileName))
             {
                 var result = (from file in _context.Files
-                              where fromTime.Date <= file.UploadedDate.Date && toTime.Date >= file.UploadedDate.Date
+                              where fromTime.Date <= file.UploadedDate.Date && toTime.Date >= file.UploadedDate.Date && file.UserId == userId && file.DeleteFlag == false
                               orderby file.UploadedDate descending
                               select file);
 
@@ -55,39 +54,50 @@ namespace sharedfile.Services.Imp
             }
             else
             {
-                var result = (List<Ffile>)(from file in _context.Files
-                                           where file.FileName.Contains(fileName) && fromTime.Date <= file.UploadedDate.Date && toTime.Date >= file.UploadedDate.Date
-                                           orderby file.UploadedDate descending
-                                           select file);
+                var result = (from file in _context.Files
+                              where file.FileName.Contains(fileName) && fromTime.Date <= file.UploadedDate.Date && toTime.Date >= file.UploadedDate.Date && file.UserId == userId && file.DeleteFlag == false
+                              orderby file.UploadedDate descending
+                              select file);
                 files = result.ToList();
             }
 
-            return paging(files, currentPage);
+            return files;
         }
 
 
-        private SearchVM paging(List<Ffile> files, int currentPage)
+        private bool validate(string fileName, string uploadDayFrom, string uploadDayTo, string userId)
         {
-
-            int maxItems = _config.GetValue<int>(Constants.MAX_ITEMS_SEARCH_PAGE);
-            int start = (currentPage - 1) * maxItems;
-            SearchVM vm = new SearchVM();
-
-            vm.files = files.ToList().Skip(start).Take(maxItems).ToList();
-            vm.currentPage = currentPage;
-            vm.maxItemsSearchPage = maxItems;
-            vm.totalRecords = files.Count();
-            vm.pageCount = Convert.ToInt32(Math.Ceiling(files.Count() / (double)maxItems));
-            return vm;
-        }
-
-
-        private bool validate(string fileName, string uploadDayFrom, string uploadDayTo)
-        {
-            if (string.IsNullOrEmpty(fileName) && string.IsNullOrEmpty(uploadDayFrom) && string.IsNullOrEmpty(uploadDayTo)) return false;
+            if (string.IsNullOrEmpty(fileName) && string.IsNullOrEmpty(uploadDayFrom) && string.IsNullOrEmpty(uploadDayTo) && string.IsNullOrEmpty(userId)) return false;
 
 
             return true;
+        }
+
+        public IEnumerable<Ffile> GetFiles(string userId, string folderId, int number = 10)
+        {
+            IEnumerable<Ffile> list = Enumerable.Empty<Ffile>();
+
+            if (string.IsNullOrEmpty(folderId))
+            {
+                list = from file in _context.Files
+                       where file.UserId == userId && file.DeleteFlag == false && file.FolderGUID == null
+                       orderby file.UploadedDate descending
+                       select file;
+            }
+            else
+            {
+                list = from file in _context.Files
+                       where file.UserId == userId && file.DeleteFlag == false && file.FolderGUID == folderId
+                       orderby file.UploadedDate descending
+                       select file;
+            }
+
+            if (number != 0)
+            {
+                return list.Take(number).ToList();
+            }
+            else return list.ToList();
+
         }
     }
 }

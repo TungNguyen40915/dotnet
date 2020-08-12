@@ -42,6 +42,7 @@ file_upload = elem.fileupload({
     });
 
 function submitForm() {
+
     var fileNames = "<ul>" + "\n";
     for (var i = 0; i < filesList.length; i++) {
         fileNames = fileNames + "<li class=\"upload-filename-progress\"> " + filesList[i].name + "</li>" + "\n";
@@ -59,7 +60,10 @@ function submitForm() {
         for (var i = 0; i < filesList.length; i++) {
             formData.append("files", filesList[i]);
         }
-        var curURL = document.URL.toLocaleLowerCase();
+
+
+
+        var curURL = document.URL.toLowerCase();
         $.ajax(
             {
                 url: curURL.replace("/upload", "/upload/onupload"),
@@ -72,18 +76,17 @@ function submitForm() {
                         resetModal();
                         $('#form-modal-success .filelist').html(fileNames);
                         $('#form-modal-success').modal('show');
-                    } else if (response.success == 'false') {
+                    } else {
                         resetModal();
                         $('#form-modal-error .filelist').html(response.message);
                         $('#form-modal-error').modal('show');
-                    } else {
-                        window.location.replace(response.url);
                     }
 
                 },
                 error: function (result) {
                     resetModal();
-                    window.location.href = '/Upload/Error/';
+                    $('#form-modal-error .filelist').html("Unable to upload files");
+                    $('#form-modal-error').modal('show');
                 }
             }
         );
@@ -162,4 +165,15 @@ function locateCenter() {
         'left': ((w - cw) / 2) + 'px',
         'top': ((h - ch) / 2) + 'px'
     });
+}
+
+function getURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+            return sParameterName[1];
+        }
+    }
 }

@@ -12,12 +12,12 @@
     });
 });
 
-$("#userId").on('input', changeInput);
 $("#fileName").on('input', changeInput);
 $("#fromDate").on('input', changeInput);
 $("#toDate").on('input', changeInput);
 $("#upload").click(changeInput);
 $("#download").click(changeInput);
+$("#delete").click(changeInput);
 
 
 function changeInput() {
@@ -28,7 +28,7 @@ function changeInput() {
 }
 
 function checkInput() {
-    return !($("#userId").val().trim() == "" && $("#fileName").val().trim() == "" && $("#fromDate").val() == "" && $("#toDate").val() == "" && $("#upload").prop("checked") == false && $("#download").prop("checked") == false);
+    return !($("#fileName").val().trim() == "" && $("#fromDate").val() == "" && $("#toDate").val() == "" && $("#upload").prop("checked") == false && $("#delete").prop("checked") == false && $("#download").prop("checked") == false);
 }
 
 function checkDate(date) {
@@ -44,7 +44,6 @@ function submitForm() {
     var validation = validateInput();
     var inputCheck = checkInput();
     if (validation && inputCheck) {
-        $("#page").val(1);
         $("#searchForm").submit();
     }
 }
@@ -67,16 +66,4 @@ function validateInput() {
 
 function resetModal() {
     $('#form-modal-message').modal('hide');
-}
-
-function paging(num) {
-    if (num < 1 || num > parseInt(pageCount)) return;
-    $("#page").val(num);
-    $("#fileName").val($("#fileNameInput").val());
-    $("#userId").val($("#userIdInput").val());
-    $("#fromDate").val($("#fromDateInput").val());
-    $("#toDate").val($("#toDateInput").val());
-    $("#upload").prop('checked', $("#uploadInput").prop('checked'));
-    $("#download").prop('checked', $("#downloadInput").prop('checked'));
-    $("#searchForm").submit();
 }

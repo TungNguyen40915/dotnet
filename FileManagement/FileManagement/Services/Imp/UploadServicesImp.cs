@@ -22,7 +22,7 @@ namespace sharedfile.Services.Imp
             _config = config;
         }
 
-        public bool UploadFile(string userId, IList<IFormFile> files)
+        public bool UploadFile(string userId, IList<IFormFile> files, string folderId)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace sharedfile.Services.Imp
 
                 foreach (IFormFile file in files)
                 {
-                    UploadFile(userId, file, container);
+                    UploadFile(userId, file, container, folderId);
                 }
                 return true;
             }
@@ -103,7 +103,7 @@ namespace sharedfile.Services.Imp
             }
         }
 
-        private void UploadFile(string userId, IFormFile uploadFile, CloudBlobContainer container)
+        private void UploadFile(string userId, IFormFile uploadFile, CloudBlobContainer container, string folderId)
         {
             string fileGUID = "";
             try
@@ -128,6 +128,7 @@ namespace sharedfile.Services.Imp
                 fileManagement.FileSize = uploadFile.Length;
                 fileManagement.DeleteFlag = false;
                 fileManagement.UploadedDate = System.DateTime.Now;
+                fileManagement.FolderGUID = folderId;
                 _context.Files.Add(fileManagement);
                 _context.SaveChanges();
 

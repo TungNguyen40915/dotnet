@@ -1,0 +1,65 @@
+﻿@{ ViewBag.Title = "index"; }
+
+
+<div class="gpp_mt-32 page-header">
+    <h1 class="hd2-type01">@ViewBag.FolderName</h1>
+</div>
+
+<div class="gpp_mb-48">
+    <a style="float: right; " class="gpp_button gpp_btn-primary" value="Upload File" href="/Upload?folderId=@ViewBag.FolderId">UPLOAD FILE</a>
+</div>
+<div class="gpp_mb-32">
+    <br />
+</div>
+
+
+<table class="table_data gpp20_searchresult-table gpp_mb-32">
+    <thead>
+        <tr>
+            <th>File Name</th>
+            <th class="result-filesize">File Size</th>
+            <th class="result-day">Uploaded Date</th>
+        </tr>
+    </thead>
+    <tbody id="pagination">
+
+        @if (ViewBag.files.Count > 0)
+        {
+            @foreach (var item in ViewBag.files)
+            {
+                <tr class="row-item">
+                    <td>
+                        <p class="result-filename"><a class="result-filelink" value="@item.FileName" href="/Download/index?ffid=@item.GUID">@item.FileName</a></p>
+                        <p class="result-filepass">
+                            <script language="javascript">
+                                            document.write(window.location.origin+"/Download/index?ffid=@item.GUID");
+                            </script>
+                        </p>
+                    </td>
+                    @if (item.FileSize >= 1048576)
+                    {
+                        <td class="result-filesize">@((item.FileSize / 1048576).ToString("0.00"))MB</td>
+                    }
+                    else if (item.FileSize >= 1024)
+                    {
+                        <td class="result-filesize">@((item.FileSize / 1024).ToString("0.00"))KB</td>
+                    }
+                    else
+                    {
+                        <td class="result-filesize">@((item.FileSize).ToString("0.00"))B</td>
+                    }
+
+                    <td class="result-day">@Convert.ToDateTime(item.UploadedDate).ToString("yyyy/MM/dd HH:mm:ss")</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td>
+                    No file found.
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

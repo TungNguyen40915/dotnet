@@ -36,15 +36,21 @@
 </head>
 <body>
     <div class="navbar navbar-static-top gpp_headernav" role="navigation">
-        <div class="container">
+        <div class="container ">
+            <div style="margin-top: 20px; display: flex; justify-content: space-between">
+                <span style="font-size: 30px; font-family: Courier New, Courier, monospace">File Management System</span>
+                <span style="font-size: 30px; font-family: Courier New, Courier, monospace">NBTUNG</span>
+            </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
     </div>
     <footer>
         <div class="gpp_footer-line"></div>
         <div class="gpp_footer-container">
+            <p class="footer-copyright">.NET Midterm Exercise - developed by nbtung16521395.</p>
         </div>
     </footer>
     @RenderSection("scripts", required: false)

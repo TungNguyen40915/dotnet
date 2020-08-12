@@ -1,10 +1,208 @@
 ﻿@{ ViewBag.Title = "index"; }
 
-<a href='@Url.Action("Index", "Upload", new { userid = "SampleUserId"})'>
-    UPLOAD FILE
-</a>
 
-<a href='@Url.Action("Index", "Search", new { userid = "SampleUserId"})'>
-    SEARCH FILE
-</a>
+<div class="gpp_mt-32 page-header">
+    <h1 class="hd2-type01">My File</h1>
+</div>
 
+<div class="gpp_mb-48">
+    <a style="float: right; " class="gpp_button gpp_btn-primary" value="Upload File" href="/Upload">UPLOAD FILE</a>
+</div>
+<div class="gpp_mb-32">
+    <br />
+</div>
+
+
+<table class="table_data gpp20_searchresult-table gpp_mb-32">
+    <thead>
+        <tr>
+            <th>File Name</th>
+            <th class="result-filesize">File Size</th>
+            <th class="result-day">Uploaded Date</th>
+        </tr>
+    </thead>
+    <tbody id="pagination">
+
+        @if (ViewBag.files.Count > 0)
+        {
+            @foreach (var item in ViewBag.files)
+            {
+                <tr class="row-item">
+                    <td>
+                        <p class="result-filename"><a class="result-filelink" value="@item.FileName" href="/Download/index?ffid=@item.GUID">@item.FileName</a></p>
+                        <p class="result-filepass">
+                            <script language="javascript">
+                                            document.write(window.location.origin+"/Download/index?ffid=@item.GUID");
+                            </script>
+                        </p>
+                    </td>
+                    @if (item.FileSize >= 1048576)
+                    {
+                        <td class="result-filesize">@((item.FileSize / 1048576).ToString("0.00"))MB</td>
+                    }
+                    else if (item.FileSize >= 1024)
+                    {
+                        <td class="result-filesize">@((item.FileSize / 1024).ToString("0.00"))KB</td>
+                    }
+                    else
+                    {
+                        <td class="result-filesize">@((item.FileSize).ToString("0.00"))B</td>
+                    }
+
+                    <td class="result-day">@Convert.ToDateTime(item.UploadedDate).ToString("yyyy/MM/dd HH:mm:ss")</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td>
+                    No file found.
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="gpp_mt-32">
+    <a style="float: right;" class="result-filelink" value="View All Files" href="/search">View all</a>
+</div>
+
+<div class="gpp_mt-32 page-header">
+    <h1 class="hd2-type01">My Folders</h1>
+</div>
+
+<div class="gpp_mb-48">
+    <button style="float: right; " class="gpp_button gpp_btn-primary" value="Create Folder" onclick="createFolder()">CREATE FOLDER</button>
+</div>
+<div class="gpp_mb-32">
+    <br />
+</div>
+
+
+<table class="table_data gpp20_searchresult-table gpp_mb-32">
+    <tbody id="pagination">
+
+        @if (ViewBag.folders.Count > 0)
+        {
+            @foreach (var item in ViewBag.folders)
+            {
+                <tr class="row-item">
+                    <td>
+                        <p class="result-filename">
+                            <a class="result-filelink" value="@item.FolderName" href="/Folder?id=@item.GUID">@item.FolderName</a>
+                        </p>
+                    </td>
+
+                    <td colspan="1" class="result-day">Create: @Convert.ToDateTime(item.CreatedDate).ToString("yyyy/MM/dd HH:mm:ss")</td>
+                    <td colspan="1" class="result-day">50GB</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td>
+                    No folder found.
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="gpp_mt-32">
+    <a style="float: right;" class="result-filelink" value="View All Files" href="/search">View all</a>
+</div>
+
+
+<div class="gpp_mt-32 page-header">
+    <h1 class="hd2-type01">My Activity</h1>
+</div>
+
+<div class="gpp_mb-32">
+    <br />
+</div>
+
+
+<table class="gpp20_log-table">
+    <thead>
+        <tr>
+            <th colspan="2" class="gpp_w10p">Operation Date</th>
+            <th colspan="2" class="gpp_w30p">UserId</th>
+            <th class="gpp_w10p">Operation Type</th>
+            <th colspan="2">Filename</th>
+        </tr>
+    </thead>
+    <tbody id="pagination">
+
+        @if (ViewBag.logs.Count > 0)
+        {
+            @foreach (var item in ViewBag.logs)
+            {
+                <tr>
+                    <td colspan="2" style="white-space: nowrap !important">
+                        @item.log.OperationDate
+
+                    </td>
+                    <td colspan="2">
+                        @item.log.UserId
+                    </td>
+
+                    @if (item.log.Division == "1")
+                    {
+                        <td style="color: blue;">Upload</td>
+                    }
+                    @if (item.log.Division == "2")
+                    {
+                        <td style="color: green;">Download</td>
+                    }
+                    @if (item.log.Division == "3")
+                    {
+                        <td style="color: red;">Delete</td>
+                    }
+                    <td colspan="2">
+                        @item.file.FileName
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4">
+                    No activity found.
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="gpp_mt-32 gpp_mb-32">
+    <a style="float: right;" class="result-filelink" value="View All Files" href="/log">View all</a>
+</div>
+
+<br />
+
+<div class=" gpp_mt-32">
+    <a style="float: right;" class="gpp_button gpp_btn-primary gpp_mb-32" value="" href="/home/Logout">Log out</a></>
+</div>
+
+<div tabindex="-1" role="dialog" id="form-create-folder" data-backdrop="static" data-keyboard="false" class="gpp20modalWindow modal">
+    <div class="status-area">
+        <span class="status-msg">Create New Folder</span>
+    </div>
+
+
+    <div class="gpp20-inputgroup">
+        <p class="input-label">Folder Name</p>
+        <input class="gpp20-search-form gpp_w66p" type="text" placeholder="Enter folder name" name="name" id="name" />
+    </div>
+
+
+    <div class="modal-inr-btn gpp_mt-16">
+        <button id="close02" class="gpp_button gpp_btn-negative-outline icon-icon_cancel" onclick="create()">Create</button>
+    </div>
+</div>
+
+
+<script src="~/js/home.js"></script>

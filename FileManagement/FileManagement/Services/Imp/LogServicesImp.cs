@@ -20,11 +20,11 @@ namespace sharedfile.Services.Imp
             _config = config;
         }
 
-        IEnumerable<SearchLogViewModel> ILogService.searchLog(string userId, string fileName, bool upload, bool download, string fromDate, string toDate)
+        List<SearchLogViewModel> ILogService.searchLog(string userId, string fileName, bool upload, bool download, bool delete, string fromDate, string toDate)
         {
             IEnumerable<SearchLogViewModel> logList = Enumerable.Empty<SearchLogViewModel>();
 
-            if (!validate(fileName, userId, fromDate, toDate, upload, download)) throw new Exception();
+            if (!validate(fileName, userId, fromDate, toDate, upload, download, delete)) throw new Exception();
 
             DateTime fromTime;
             DateTime toTime;
@@ -44,17 +44,7 @@ namespace sharedfile.Services.Imp
 
             if (fromTime > toTime) throw new Exception();
 
-            if (upload != download)
-            {
-                string divisionUpload = _config.GetValue<string>(Constants.DIVISION_UPLOAD);
-                string divisionDownload = _config.GetValue<string>(Constants.DIVISION_DOWNLOAD);
-                logList = from log in _context.Logs
-                          join file in _context.Files on log.FileGUID equals file.GUID
-                          where log.UserId.Contains(userId) && file.FileName.Contains(fileName) && fromTime.Date <= log.OperationDate.Date && toTime.Date >= log.OperationDate.Date && log.Division == (upload ? divisionUpload : divisionDownload) && log.LogType == _config.GetValue<string>(Constants.LOG_TYPE_NORMAL)
-                          orderby log.OperationDate descending
-                          select new SearchLogViewModel { log = log, file = file };
-            }
-            else
+            if (upload == download && upload == delete)
             {
                 logList = from log in _context.Logs
                           join file in _context.Files on log.FileGUID equals file.GUID
@@ -62,13 +52,62 @@ namespace sharedfile.Services.Imp
                           orderby log.OperationDate descending
                           select new SearchLogViewModel { log = log, file = file };
             }
+            else
+            {
 
-            return logList;
+                string divisionUpload = _config.GetValue<string>(Constants.DIVISION_UPLOAD);
+                string divisionDownload = _config.GetValue<string>(Constants.DIVISION_DOWNLOAD);
+                string divisionDelete = _config.GetValue<string>(Constants.DIVISION_DELETE);
+                var list = from log in _context.Logs
+                           join file in _context.Files on log.FileGUID equals file.GUID
+                           where log.UserId.Contains(userId) && file.FileName.Contains(fileName) && fromTime.Date <= log.OperationDate.Date && toTime.Date >= log.OperationDate.Date && log.LogType == _config.GetValue<string>(Constants.LOG_TYPE_NORMAL)
+                           select new SearchLogViewModel { log = log, file = file };
+
+                if (upload)
+                {
+                    var list1 = from log in list
+                                where log.log.Division == divisionUpload
+                                select log;
+                    logList = logList.Concat(list1);
+                }
+                if (download)
+                {
+                    var list1 = from log in list
+                                where log.log.Division == divisionDownload
+                                select log;
+                    logList = logList.Concat(list1);
+                }
+                if (delete)
+                {
+                    var list1 = from log in list
+                                where log.log.Division == divisionDelete
+                                select log;
+                    logList = logList.Concat(list1);
+                }
+
+                logList = logList.OrderByDescending(l => l.log.OperationDate);
+            }
+
+            return logList.ToList();
         }
 
-        private bool validate(string fileName, string userId, string fromDate, string toDate, bool upload, bool download)
+        List<SearchLogViewModel> ILogService.getLog(string userId)
         {
-            if (string.IsNullOrEmpty(fileName) && string.IsNullOrEmpty(userId) && string.IsNullOrEmpty(fromDate) && string.IsNullOrEmpty(toDate) && !upload && !download) return false;
+            IEnumerable<SearchLogViewModel> logList = Enumerable.Empty<SearchLogViewModel>();
+
+            if (string.IsNullOrEmpty(userId)) throw new Exception();
+
+            logList = from log in _context.Logs
+                      join file in _context.Files on log.FileGUID equals file.GUID
+                      where log.UserId == userId
+                      orderby log.OperationDate descending
+                      select new SearchLogViewModel { log = log, file = file };
+            return logList.Take(10).ToList();
+        }
+
+        private bool validate(string fileName, string userId, string fromDate, string toDate, bool upload, bool download, bool delete)
+        {
+            if (string.IsNullOrEmpty(fileName) && string.IsNullOrEmpty(userId) && string.IsNullOrEmpty(fromDate) && string.IsNullOrEmpty(toDate) && !upload && !download && !delete) return false;
             return true;
         }
 

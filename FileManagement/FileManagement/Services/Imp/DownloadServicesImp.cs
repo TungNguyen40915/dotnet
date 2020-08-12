@@ -66,6 +66,52 @@ namespace sharedfile.Services.Imp
                 return null;
             }
         }
+
+        public bool DeleteFile(string userId, string guid, string fileUniqueName)
+        {
+            try
+            {
+                var accountName = _config.GetValue<string>(Constants.ACCOUNT_NAME);
+                var accessKey = _config.GetValue<string>(Constants.ACCESS_KEY);
+                var credential = new StorageCredentials(accountName, accessKey);
+                var storageAccount = new CloudStorageAccount(credential, true);
+
+                CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+                CloudBlobContainer container = blobClient.GetContainerReference(_config.GetValue<string>(Constants.CONTAINER_NAME));
+                CloudBlockBlob blob = container.GetBlockBlobReference(fileUniqueName);
+
+                var file = (from f in _context.Files
+                            where f.FileUniqueName == fileUniqueName
+                            select f).FirstOrDefault();
+
+                file.DeleteFlag = true;
+                _context.SaveChanges();
+
+
+                string divisionDelete = _config.GetValue<string>(Constants.DIVISION_DELETE);
+                string logTypeNormal = _config.GetValue<string>(Constants.LOG_TYPE_NORMAL);
+                new LogServicesImp(_context, _config).SaveLog(userId, divisionDelete, guid, logTypeNormal, null);
+
+                blob.DeleteIfExists();
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    string divisionDelete = _config.GetValue<string>(Constants.DIVISION_DELETE);
+                    string logTypeError = _config.GetValue<string>(Constants.LOG_TYPE_ERROR);
+                    new LogServicesImp(_context, _config).SaveLog(userId, divisionDelete, guid, logTypeError, e.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+                return false;
+            }
+
+        }
     }
 
 }

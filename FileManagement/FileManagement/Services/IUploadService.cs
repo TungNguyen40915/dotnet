@@ -5,7 +5,7 @@ namespace sharedfile.Services
 {
     interface IUploadService
     {
-        public bool UploadFile(string userId, IList<IFormFile> files);
+        public bool UploadFile(string userId, IList<IFormFile> files, string folderId);
 
         public bool ValidationFiles(IList<IFormFile> files);
     }

@@ -40,6 +40,8 @@
 
         public static readonly string DIVISION_UPLOAD = "divisionUpload";
 
+        public static readonly string DIVISION_DELETE = "divisionDelete";
+
         public static readonly string LOG_TYPE_NORMAL = "logTypeNormal";
 
         public static readonly string LOG_TYPE_ERROR = "logTypeError";

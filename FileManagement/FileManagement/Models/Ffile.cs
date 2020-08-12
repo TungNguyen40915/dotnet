@@ -11,6 +11,7 @@ namespace sharedfile.Models
         public string GUID { get; set; }
         public string FileName { get; set; }
         public string FileUniqueName { get; set; }
+        public string FolderGUID { get; set; }
         public string UserId { get; set; }
         public string BlobUrl { get; set; }
         public DateTime UploadedDate { get; set; }

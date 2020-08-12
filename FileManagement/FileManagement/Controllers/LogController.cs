@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using ClosedXML.Excel;
 using log4net;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using sharedfile.Commons;
@@ -18,7 +19,6 @@ namespace sharedfile.Controllers
     {
         private MyContext _context;
         private readonly IConfiguration _config;
-        private readonly ILog _logger = LogManager.GetLogger(typeof(LogController));
 
         public LogController(MyContext context, IConfiguration config)
         {
@@ -29,69 +29,78 @@ namespace sharedfile.Controllers
 
         public IActionResult Index()
         {
-            try
-            {
-                ViewBag.data = new SearchLogViewModelList
-                {
-                    modelList = null,
-                    pageCount = 1,
-                    currentPage = 1,
-                    totalRecords = 0
-                };
+            IUserService _us = new UserServicesImpl(_context, _config);
+            string token = HttpContext.Session.GetString("token");
 
-                return View();
-            }
-            catch (Exception e)
+            if (_us.ValidateCurrentToken(token))
             {
-                _logger.Error(e.ToString());
-                return View(Constants.ERROR_PATH);
+                string username = _us.GetClaim(token, "userId");
+
+                try
+                {
+                    ILogService _ss = new LogServicesImp(_context, _config);
+                    var vm = _ss.searchLog(username, "", true, true, true, "", "");
+
+                    ViewBag.totalRecords = vm.Count;
+                    ViewBag.data = vm;
+                    return View("index", vm);
+                }
+                catch (Exception e)
+                {
+                    return View(Constants.ERROR_PATH);
+                }
+            }
+            else
+            {
+                return Redirect("~/Login");
             }
         }
 
 
         public IActionResult Search()
         {
-            try
+            IUserService _us = new UserServicesImpl(_context, _config);
+            string token = HttpContext.Session.GetString("token");
+
+            if (_us.ValidateCurrentToken(token))
             {
-                string userId = Request.Query["userId"];
-                string fileName = Request.Query[Constants.FILE_NAME];
-                bool upload = Convert.ToBoolean(Request.Query["upload"]);
-                bool download = Convert.ToBoolean(Request.Query["download"]);
-                string fromDate = Request.Query["fromDate"];
-                string toDate = Request.Query["toDate"];
-                string currentPage = Request.Query["page"];
-                int page = !string.IsNullOrEmpty(currentPage) && Convert.ToInt32(currentPage) > 0 ? Convert.ToInt32(currentPage) : 1;
+                string username = _us.GetClaim(token, "userId");
 
-                ILogService _ls = new LogServicesImp(_context, _config);
-
-                int logPerPage = _config.GetValue<int>(Constants.LOG_DISPLAY_PER_PAGE);
-
-                var logList = _ls.searchLog(userId, fileName, upload, download, fromDate, toDate);
-
-                int start = (page - 1) * logPerPage;
-
-                var searchView = new SearchLogViewModelList
+                try
                 {
-                    modelList = logList.ToList().Skip(start).Take(logPerPage),
-                    pageCount = Convert.ToInt32(Math.Ceiling(logList.ToList().Count() / (double)logPerPage)),
-                    currentPage = page,
-                    totalRecords = logList.Count()
-                };
+                    string fileName = Request.Query[Constants.FILE_NAME];
+                    bool upload = Convert.ToBoolean(Request.Query["upload"]);
+                    bool download = Convert.ToBoolean(Request.Query["download"]);
+                    bool delete = Convert.ToBoolean(Request.Query["delete"]);
+                    string fromDate = Request.Query["fromDate"];
+                    string toDate = Request.Query["toDate"];
 
-                ViewBag.userId = userId;
-                ViewBag.fileName = fileName;
-                ViewBag.upload = upload;
-                ViewBag.download = download;
-                ViewBag.fromDate = fromDate;
-                ViewBag.toDate = toDate;
-                ViewBag.data = searchView;
 
-                return View("Index");
+                    ILogService _ls = new LogServicesImp(_context, _config);
+
+                    int logPerPage = _config.GetValue<int>(Constants.LOG_DISPLAY_PER_PAGE);
+
+                    var logList = _ls.searchLog(username, fileName, upload, download, delete, fromDate, toDate);
+
+                    ViewBag.fileName = fileName;
+                    ViewBag.upload = upload;
+                    ViewBag.download = download;
+                    ViewBag.delete = delete;
+                    ViewBag.fromDate = fromDate;
+                    ViewBag.toDate = toDate;
+                    ViewBag.totalRecords = logList.Count;
+                    ViewBag.data = logList;
+
+                    return View("Index");
+                }
+                catch
+                {
+                    return View(Constants.ERROR_PATH);
+                }
             }
-            catch (Exception e)
+            else
             {
-                _logger.Error(e.ToString());
-                return View(Constants.ERROR_PATH);
+                return Redirect("~/Login");
             }
         }
     }

@@ -1,0 +1,137 @@
+﻿2020-07-30 21:53:36,314  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 21:53:36,327  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 21:53:36,330  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 21:53:36,332  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 21:53:36,450  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 21:58:36,884 ERROR sharedfile.Controllers.SearchController - MESSAGE: System.InvalidCastException: Unable to cast object of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[sharedfile.Models.FileManagement]' to type 'System.Collections.Generic.List`1[sharedfile.Models.FileManagement]'.
+   at sharedfile.Services.Imp.SearchServiceImp.SearchFiles(String fileName, String uploadDayFrom, String uploadDayTo, Int32 currentPage) in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Services/Imp/SearchServiceImp.cs:line 49
+   at sharedfile.Controllers.SearchController.Search() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Controllers/SearchController.cs:line 62
+ 2020-07-30 22:03:19,679  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 22:03:19,721  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 22:03:19,724  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 22:03:19,726  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 22:03:19,783  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 22:03:41,795 ERROR Microsoft.EntityFrameworkCore.Database.Connection - MESSAGE: An error occurred using the connection to database 'nbtung' on server 'tcp:servergpp.database.windows.net,1433'.
+ 2020-07-30 22:03:41,805 ERROR Microsoft.EntityFrameworkCore.Query - MESSAGE: An exception occurred while iterating over the results of a query for context type 'sharedfile.Models.MyContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open server 'servergpp' requested by the login. Client with IP address '171.248.54.243' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:200b8442-0f10-43c6-a8d5-75ea079db973
+Error Number:40615,State:1,Class:14
+ Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open server 'servergpp' requested by the login. Client with IP address '171.248.54.243' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:200b8442-0f10-43c6-a8d5-75ea079db973
+Error Number:40615,State:1,Class:14
+2020-07-30 22:03:48,533 ERROR sharedfile.Controllers.SearchController - MESSAGE: Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open server 'servergpp' requested by the login. Client with IP address '171.248.54.243' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at sharedfile.Services.Imp.SearchServiceImp.SearchFiles(String fileName, String uploadDayFrom, String uploadDayTo, Int32 currentPage) in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Services/Imp/SearchServiceImp.cs:line 54
+   at sharedfile.Controllers.SearchController.Search() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Controllers/SearchController.cs:line 62
+ClientConnectionId:200b8442-0f10-43c6-a8d5-75ea079db973
+Error Number:40615,State:1,Class:14
+ 2020-07-30 22:10:48,425  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 22:10:48,434  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 22:10:48,437  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 22:10:48,439  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 22:10:48,502  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 22:30:29,616  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 22:30:29,629  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 22:30:29,632  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 22:30:29,635  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 22:30:29,686  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 22:40:36,370  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 22:40:36,383  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 22:40:36,385  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 22:40:36,388  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 22:40:36,434  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:14:42,586  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:14:42,598  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:14:42,601  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:14:42,605  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:14:42,682  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:17:11,664  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:17:11,676  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:17:11,679  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:17:11,682  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:17:11,734  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:18:11,875  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:18:11,891  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:18:11,894  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:18:11,897  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:18:11,948  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:21:38,095  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:21:38,105  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:21:38,108  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:21:38,110  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:21:38,157  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:35:46,440  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:35:46,453  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:35:46,456  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:35:46,459  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:35:46,536  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:51:06,329  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:51:06,341  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:51:06,344  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:51:06,347  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:51:06,418  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:52:54,059  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:52:54,100  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:52:54,103  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:52:54,105  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:52:54,154  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:54:24,943  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:54:24,956  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:54:24,959  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:54:24,962  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:54:25,014  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-07-30 23:56:54,161  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-30 23:56:54,179  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-30 23:56:54,181  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-30 23:56:54,184  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-30 23:56:54,227  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 

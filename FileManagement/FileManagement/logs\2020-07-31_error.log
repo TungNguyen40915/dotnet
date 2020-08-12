@@ -1,0 +1,6 @@
+﻿2020-07-31 00:11:50,835  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-07-31 00:11:50,847  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-31 00:11:50,850  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-07-31 00:11:50,853  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-07-31 00:11:50,900  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 

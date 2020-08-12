@@ -27,6 +27,7 @@
     <PackageReference Include="ClosedXML" Version="0.95.3" />
     <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="3.1.0" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,4 +42,8 @@
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\Folder\" />
+  </ItemGroup>
 </Project>

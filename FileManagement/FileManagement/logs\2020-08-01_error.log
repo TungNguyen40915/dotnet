@@ -1,0 +1,656 @@
+﻿2020-08-01 10:06:43,002  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 10:06:43,039  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 10:06:43,042  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 10:06:43,045  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 10:06:43,105  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 10:11:26,842  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 10:11:26,857  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 10:11:26,860  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 10:11:26,863  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 10:11:26,926  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 10:12:55,908  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 10:12:55,921  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 10:12:55,924  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 10:12:55,926  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 10:12:55,967  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 10:22:44,985  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 10:22:45,000  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 10:22:45,004  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 10:22:45,009  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 10:22:45,073  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 10:35:49,679  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 10:35:49,702  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 10:35:49,705  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 10:35:49,708  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 10:35:49,767  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 10:44:54,167  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 10:44:54,183  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 10:44:54,186  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 10:44:54,188  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 10:44:54,262  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 11:18:36,078  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 11:18:36,092  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 11:18:36,095  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 11:18:36,098  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 11:18:36,192  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:06:29,308  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:06:29,321  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:06:29,324  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:06:29,327  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:06:29,407  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:08:02,158  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:08:02,171  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:08:02,174  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:08:02,176  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:08:02,219  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:13:16,927  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:13:16,942  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:13:16,945  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:13:16,948  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:13:17,002  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:32:59,514  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:32:59,530  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:32:59,533  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:32:59,535  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:32:59,634  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:35:29,270  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:35:29,315  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:35:29,320  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:35:29,326  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:35:29,395  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:40:28,339  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:40:28,354  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:40:28,357  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:40:28,359  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:40:28,413  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:43:14,180  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:43:14,194  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:43:14,197  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:43:14,199  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:43:14,264  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:44:43,900  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:44:43,917  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:44:43,920  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:44:43,923  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:44:43,994  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:45:47,694 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at sharedfile.Services.Imp.UserServicesImpl.GetClaim(String token, String claimType) in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Services/Imp/UserServicesImpl.cs:line 104
+   at sharedfile.Controllers.HomeController.Index() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Controllers/HomeController.cs:line 30
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 12:46:50,534  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:46:50,547  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:46:50,550  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:46:50,573  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:46:50,631  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:52:29,674  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:52:29,712  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:52:29,715  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:52:29,718  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:52:29,776  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 12:55:38,616  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 12:55:38,628  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 12:55:38,631  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 12:55:38,636  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 12:55:38,710  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:19:13,779  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:19:13,839  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:19:13,843  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:19:13,847  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:19:13,925  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:24:30,945  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:24:30,963  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:24:30,967  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:24:30,970  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:24:31,020  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:29:26,491  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:29:26,504  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:29:26,506  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:29:26,509  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:29:26,587  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:31:01,411  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:31:01,432  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:31:01,436  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:31:01,440  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:31:01,535  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:40:24,129  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:40:24,162  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:40:24,165  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:40:24,169  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:40:24,252  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:45:14,152  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:45:14,165  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:45:14,168  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:45:14,171  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:45:14,237  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:51:04,277  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:51:04,292  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:51:04,295  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:51:04,298  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:51:04,370  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:52:23,318  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:52:23,330  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:52:23,333  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:52:23,336  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:52:23,395  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:57:19,268  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:57:19,284  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:57:19,287  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:57:19,290  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:57:19,344  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 13:58:39,245  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 13:58:39,260  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 13:58:39,263  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 13:58:39,285  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 13:58:39,383  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:00:35,549  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:00:35,609  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:00:35,612  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:00:35,615  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:00:35,660  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:02:03,263  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:02:03,274  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:02:03,277  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:02:03,280  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:02:03,355  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:04:07,670  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:04:07,686  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:04:07,689  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:04:07,692  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:04:07,743  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:06:12,292  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:06:12,329  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:06:12,332  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:06:12,334  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:06:12,391  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:08:38,106  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:08:38,117  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:08:38,120  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:08:38,123  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:08:38,179  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:11:05,275  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:11:05,289  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:11:05,292  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:11:05,294  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:11:05,338  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:21:10,530 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Operator '>' cannot be applied to operands of type 'System.Collections.Generic.List<sharedfile.Models.Ffile>' and 'int'
+   at CallSite.Target(Closure , CallSite , Object , Int32 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 21
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 14:21:19,787 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Operator '>' cannot be applied to operands of type 'System.Collections.Generic.List<sharedfile.Models.Ffile>' and 'int'
+   at CallSite.Target(Closure , CallSite , Object , Int32 )
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 21
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 14:21:38,866 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Non-invocable member 'System.Collections.Generic.List<sharedfile.Models.Ffile>.Count' cannot be used like a method.
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 21
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 14:29:59,614 ERROR sharedfile.Controllers.SearchController - MESSAGE: System.InvalidCastException: Unable to cast object of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[sharedfile.Models.Ffile]' to type 'System.Collections.Generic.List`1[sharedfile.Models.Ffile]'.
+   at sharedfile.Services.Imp.SearchServiceImp.SearchFiles(String fileName, String uploadDayFrom, String uploadDayTo, Int32 currentPage) in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Services/Imp/SearchServiceImp.cs:line 58
+   at sharedfile.Controllers.SearchController.Search() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Controllers/SearchController.cs:line 62
+ 2020-08-01 14:42:35,150  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:42:35,162  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:42:35,165  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:42:35,168  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:42:35,251  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:42:47,187 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Collections.Generic.List`1[sharedfile.Models.Ffile]', but this ViewDataDictionary instance requires a model item of type 'sharedfile.Models.SearchVM'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 14:45:51,396  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:45:51,434  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:45:51,437  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:45:51,439  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:45:51,494  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:46:51,018  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:46:51,033  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:46:51,036  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:46:51,039  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:46:51,089  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 14:47:05,802 ERROR sharedfile.Controllers.SearchController - MESSAGE: System.InvalidCastException: Unable to cast object of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[sharedfile.Models.Ffile]' to type 'System.Collections.Generic.List`1[sharedfile.Models.Ffile]'.
+   at sharedfile.Services.Imp.SearchServiceImp.SearchFiles(String fileName, String uploadDayFrom, String uploadDayTo, String userId) in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Services/Imp/SearchServiceImp.cs:line 57
+   at sharedfile.Controllers.SearchController.Search() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Controllers/SearchController.cs:line 76
+ 2020-08-01 14:48:49,046 ERROR sharedfile.Controllers.SearchController - MESSAGE: System.InvalidCastException: Unable to cast object of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[sharedfile.Models.Ffile]' to type 'System.Collections.Generic.List`1[sharedfile.Models.Ffile]'.
+   at sharedfile.Services.Imp.SearchServiceImp.SearchFiles(String fileName, String uploadDayFrom, String uploadDayTo, String userId) in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Services/Imp/SearchServiceImp.cs:line 57
+   at sharedfile.Controllers.SearchController.Search() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Controllers/SearchController.cs:line 76
+ 2020-08-01 14:50:11,416 ERROR sharedfile.Controllers.SearchController - MESSAGE: System.InvalidCastException: Unable to cast object of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[sharedfile.Models.Ffile]' to type 'System.Collections.Generic.List`1[sharedfile.Models.Ffile]'.
+   at sharedfile.Services.Imp.SearchServiceImp.SearchFiles(String fileName, String uploadDayFrom, String uploadDayTo, String userId) in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Services/Imp/SearchServiceImp.cs:line 57
+   at sharedfile.Controllers.SearchController.Search() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Controllers/SearchController.cs:line 76
+ 2020-08-01 14:50:30,170 ERROR sharedfile.Controllers.SearchController - MESSAGE: System.InvalidCastException: Unable to cast object of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[sharedfile.Models.Ffile]' to type 'System.Collections.Generic.List`1[sharedfile.Models.Ffile]'.
+   at sharedfile.Services.Imp.SearchServiceImp.SearchFiles(String fileName, String uploadDayFrom, String uploadDayTo, String userId) in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Services/Imp/SearchServiceImp.cs:line 57
+   at sharedfile.Controllers.SearchController.Search() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Controllers/SearchController.cs:line 76
+ 2020-08-01 14:52:30,634  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 14:52:30,649  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 14:52:30,652  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 14:52:30,655  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 14:52:30,716  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 15:05:38,228  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 15:05:38,241  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 15:05:38,243  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 15:05:38,246  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 15:05:38,322  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 15:05:46,938 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'object' does not contain a definition for 'Count'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 92
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 15:06:58,178 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'object' does not contain a definition for 'log'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 92
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 15:07:13,376 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'object' does not contain a definition for 'Count'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 92
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 15:10:36,263 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'object' does not contain a definition for 'Count'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 92
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 15:13:27,176 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'object' does not contain a definition for 'Count'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 92
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 15:14:18,489 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'object' does not contain a definition for 'Count'
+   at CallSite.Target(Closure , CallSite , Object )
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 92
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 15:14:30,290 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'object' does not contain a definition for 'Count'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Home/Index.cshtml:line 92
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 15:14:50,619  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 15:14:50,630  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 15:14:50,632  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 15:14:50,635  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 15:14:50,707  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 15:17:16,531  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 15:17:16,543  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 15:17:16,547  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 15:17:16,551  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 15:17:16,605  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 19:38:03,519  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 19:38:03,554  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 19:38:03,557  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 19:38:03,560  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 19:38:03,613  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 19:41:58,346  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 19:41:58,362  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 19:41:58,365  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 19:41:58,368  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 19:41:58,420  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 19:46:10,878  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 19:46:10,890  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 19:46:10,893  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 19:46:10,896  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 19:46:10,958  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 19:50:30,640  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 19:50:30,650  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 19:50:30,653  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 19:50:30,655  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 19:50:30,710  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 20:12:36,522  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 20:12:36,533  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 20:12:36,535  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 20:12:36,538  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 20:12:36,596  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 2020-08-01 20:13:18,163 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.List<sharedfile.Models.SearchLogViewModel>' does not contain a definition for 'modelList'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Log_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Log/Index.cshtml:line 60
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 20:14:06,035 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.List<sharedfile.Models.SearchLogViewModel>' does not contain a definition for 'modelList'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Log_index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Log/index.cshtml:line 60
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 20:16:02,635 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Log_Index.ExecuteAsync() in /Users/batung/Desktop/dotnet/FileManagement/FileManagement/Views/Log/Index.cshtml:line 73
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-01 20:16:57,975  INFO Microsoft.Hosting.Lifetime - MESSAGE: Now listening on: http://localhost:58384
+ 2020-08-01 20:16:57,989  INFO Microsoft.Hosting.Lifetime - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-08-01 20:16:57,992  INFO Microsoft.Hosting.Lifetime - MESSAGE: Hosting environment: Development
+ 2020-08-01 20:16:57,995  INFO Microsoft.Hosting.Lifetime - MESSAGE: Content root path: /Users/batung/Desktop/dotnet/FileManagement/FileManagement
+ 2020-08-01 20:16:58,038  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - MESSAGE: Failed to determine the https port for redirect.
+ 
